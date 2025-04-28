@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أداة المسح المؤسسي</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>أداة المسح المؤسسي</h1>
+      <p>أداة المسح المؤسسي (The Organizational Mapping Tool - OMT) هي بالأصل أداة تم تطويرها من قبل مؤسسة فورد وتم
+        تعديلها لتتوافق مع طبيعة المؤسسات</p>
+      <p>الهدف من هذه الأداة هو مساعدة فريق عمل المؤسسة على فهم نقاط قوة مؤسستهم، وتحديد مجالات التطوير التي يحتاجون
+        إليها من خلال بناء فهم مشترك للجوانب المؤسسية الرئيسة.</p>
+    </header>
+
+    <form id="organizationalForm" action="https://formspree.io/f/xkgrglpw" method="POST"
+      onsubmit="return validateForm()">
+      <!-- Organization Information -->
+      <div class="org-info">
+        <h2>معلومات المؤسسة</h2>
+        <div class="form-group">
+          <label for="organization_name">اسم المؤسسة:</label>
+          <input type="text" id="organization_name" name="organization_name" required>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="tabs">
+        <button type="button" class="tab-btn active" data-tab="section1">١. الرسالة والاستراتيجية</button>
+        <button type="button" class="tab-btn" data-tab="section2">٢. البرامج والمشاريع</button>
+        <button type="button" class="tab-btn" data-tab="section3">٣. التعلم والتقييم</button>
+        <button type="button" class="tab-btn" data-tab="section4">٤. إشراك القطاع</button>
+        <button type="button" class="tab-btn" data-tab="section5">٥. الحوكمة</button>
+        <button type="button" class="tab-btn" data-tab="section6">٦. التمويل</button>
+        <button type="button" class="tab-btn" data-tab="section7">٧. الإدارة</button>
+        <button type="button" class="tab-btn" data-tab="section8">٨. الثقافة المؤسسية</button>
+        <button type="button" class="tab-btn" data-tab="section9">٩. القيادة التنفيذية</button>
+        <button type="button" class="tab-btn" data-tab="priorities">الأولويات</button>
+      </div>
+
+      <!-- Section 1: Mission and Strategy -->
+      <section id="section1" class="tab-content active">
+        <div class="section-card">
+          <h2>١. الرسالة والاستراتيجية</h2>
+
+          <div class="assessment-item">
+            <h3>الرؤية والرسالة</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="vision" id="vision-minimum" value="minimum">
+                  <label for="vision-minimum">بالحد الأدنى</label>
+                </div>
+                <p>ليس لدى المؤسسة رؤية أو رسالة مكتوبة كما لم تحدد المؤسسة مجموعة القيم المتوافق عليها والتي تحكم
+                  عملها.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="vision" id="vision-initial" value="initial">
+                  <label for="vision-initial">أولية</label>
+                </div>
+                <p>الرؤية والرسالة مكتوبتان ولكنهما غائمتان، لا يستطيع العديد من أعضاء فريق العمل التعبير عنهما.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="vision" id="vision-medium" value="medium">
+                  <label for="vision-medium">متوسطة</label>
+                </div>
+                <p>الرؤية والرسالة واضحتان ولكن يمكن أن تكونا أكثر تحديداً. النصان معروفان وواضحان للعديد من أعضاء فريق
+                  العمل.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="vision" id="vision-strong" value="strong">
+                  <label for="vision-strong">قوية</label>
+                </div>
+                <p>الرؤية والرسالة واضحتان محددتان و مقنعتان وموحيتان. فريق العمل ومجلس الإدارة ملتزمان بشكل کامل
+                  بالرؤية والرسالة.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>الأهداف والنتائج</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="goals" id="goals-minimum" value="minimum">
+                  <label for="goals-minimum">بالحد الأدنى</label>
+                </div>
+                <p>لا توجد أهداف مكتوبة لعمل المؤسسة البرامجي</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="goals" id="goals-initial" value="initial">
+                  <label for="goals-initial">أولية</label>
+                </div>
+                <p>يوجد أهداف بعيدة واضحة لكنها غير ملموسة وغير قابلة للتحقق بالضرورة ولا يوجد أهداف قصيرة الأمد</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="goals" id="goals-medium" value="medium">
+                  <label for="goals-medium">متوسطة</label>
+                </div>
+                <p>يوحد أهداف بعيدة ونتائج واضحة لكنها غير قابلة للقياس. رغم أن هذه الأهداف معروفة لأغلب أعضاء فريق
+                  العمل إلا أنها لا تؤثر على برمجة المؤسسة.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="goals" id="goals-strong" value="strong">
+                  <label for="goals-strong">قوية</label>
+                </div>
+                <p>أهداف واضحة ونتائج قابلة للتحقق معروفة لكامل فريق العمل. تقود هذه الأهداف برامج المؤسسة وتؤثر على
+                  عملها التنفيذي.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>الخطة الاستراتيجية</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="strategic_plan" id="strategic-minimum" value="minimum">
+                  <label for="strategic-minimum">بالحد الأدنى</label>
+                </div>
+                <p>لا يوجد لدى المؤسسة خطة استراتيجية مكتوبة ويمكن أن يكون عمل المؤسسة مشتتاً ولا يتم العمل على تعزيز
+                  التواصل بين المشاريع المختلفة.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="strategic_plan" id="strategic-initial" value="initial">
+                  <label for="strategic-initial">أولية</label>
+                </div>
+                <p>الخطة الاستراتيجية مكتوبة لكنها لا تشكل مصدراً أساسياً لتحديد عمل المؤسسة. نادرا ما تتم الإشارة إلى
+                  الخطة الاستراتيجية.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="strategic_plan" id="strategic-medium" value="medium">
+                  <label for="strategic-medium">متوسطة</label>
+                </div>
+                <p>الخطة الاستراتيجية تشكل مصدراً أساسياً لتحديد عمل المؤسسة البرامجي والتنفيذي لكنها لا تؤثر في صناعة
+                  القرار.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="strategic_plan" id="strategic-strong" value="strong">
+                  <label for="strategic-strong">قوية</label>
+                </div>
+                <p>الخطة الاستراتيجية هي أساس نتائج عمل المؤسسة. تقود صناعة القرار. تتم مراجعة وتطوير البرامج بشكل دوري
+                  في ضوء التحديات والفرص الطارئة للحفاظ على الاتساق مع الخطة.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-section">
+            <h3>إضافة الملاحظات</h3>
+            <textarea name="section1_notes" rows="4" placeholder="أضف ملاحظاتك هنا..."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Programs and Projects -->
+      <section id="section2" class="tab-content">
+        <div class="section-card">
+          <h2>٢. البرامج والمشاريع</h2>
+
+          <div class="assessment-item">
+            <h3>اتساق البرامج مع الرسالة</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_alignment" id="alignment-minimum" value="minimum">
+                  <label for="alignment-minimum">بالحد الأدنى</label>
+                </div>
+                <p>لا يتم ربط المشاريع بشكل مباشر برسالة أو أهداف المؤسسة. أغلب مشاريع المؤسسة غير متسقة وغير مترابطة
+                  ببعضها.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_alignment" id="alignment-initial" value="initial">
+                  <label for="alignment-initial">أولية</label>
+                </div>
+                <p>يمكن ربط أغلب المشاريع برسالة وأهداف المؤسسة لكن يصعب على الفريق تحديد ما يقع ضمن أو خارج رسالتهم
+                  المشاريع تنفذ بشكل مستقل عن بعضها</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_alignment" id="alignment-medium" value="medium">
+                  <label for="alignment-medium">متوسطة</label>
+                </div>
+                <p>يتم بناء علاقة عضوية بين المشاريع المختلفة من خلال إدراجها تحت برامج يتم تصميمها بشكل واضح وتتجاوب مع
+                  رسالة وأهداف المؤسسة. تعمل البرامج بشكل مستقل عن بعضها البعض.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_alignment" id="alignment-strong" value="strong">
+                  <label for="alignment-strong">قوية</label>
+                </div>
+                <p>جميع برامج المؤسسة واضحة ومعرفة بشكل جيد ومنسجمة مع رسالة المؤسسة البرامج مترابطة مع بعضها ويتم
+                  تنفيذها من خلال آليات تشاورية تتيح رفع الفعالية والنتائج المنتظرة.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>تخطيط البرامج</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_planning" id="planning-minimum" value="minimum">
+                  <label for="planning-minimum">بالحد الأدنى</label>
+                </div>
+                <p>يتم نادراً العمل على تصميم البرامج ولا يتم الاستفادة من الفرص المتاحة أو الاعتماد على دراسة
+                  الاحتياجات.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_planning" id="planning-initial" value="initial">
+                  <label for="planning-initial">أولية</label>
+                </div>
+                <p>يتم العمل على تصميم البرامج لكنه لا يتضمن تحليل الفرص المتاحة والاحتياجات التي تم رصدها</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_planning" id="planning-medium" value="medium">
+                  <label for="planning-medium">متوسطة</label>
+                </div>
+                <p>يتم رصد وتوثيق الفرص المتاحة وتحديد الاحتياجات كما يتم مراجعة استراتيجيات البرامج بشكل غير منتظم بناء
+                  على تقييم غير رسمي.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_planning" id="planning-strong" value="strong">
+                  <label for="planning-strong">قوية</label>
+                </div>
+                <p>يتم تصميم البرامج بناء على تحديد الفرص والاحتياجات الموثقة؛ يتم مراجعة البرامج وتقييمها بشكل منتظم.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>إشراك الفئات المهمشة</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_inclusion" id="inclusion-minimum" value="minimum">
+                  <label for="inclusion-minimum">بالحد الأدنى</label>
+                </div>
+                <p>أصوات الفئات المهمشة في المجتمعات التي تعمل معها المؤسسة غير مأخوذة بعين الاعتبار في اتخاذ القرارات
+                  بشان البرامج</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_inclusion" id="inclusion-initial" value="initial">
+                  <label for="inclusion-initial">أولية</label>
+                </div>
+                <p>أصوات الفئات المهمشة في المجتمعات التي تعمل معها المؤسسة تؤخذ بعين الاعتبار بشكل غير رسمي وغير منتظم.
+                </p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_inclusion" id="inclusion-medium" value="medium">
+                  <label for="inclusion-medium">متوسطة</label>
+                </div>
+                <p>أصوات الفئات المهمشة في المجتمعات التي تعمل معها المؤسسة تؤخذ بعين الاعتبار بشكل متواتر</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_inclusion" id="inclusion-strong" value="strong">
+                  <label for="inclusion-strong">قوية</label>
+                </div>
+                <p>يتم استكشاف أصوات الفئات المهمشة في المجتمعات التي تعمل معها المؤسسة بشكل مسبق ولها تأثير واضح في
+                  برمجة المؤسسة.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-section">
+            <h3>إضافة الملاحظات</h3>
+            <textarea name="section2_notes" rows="4" placeholder="أضف ملاحظاتك هنا..."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Learning and Evaluation -->
+      <section id="section3" class="tab-content">
+        <div class="section-card">
+          <h2>٣. التعلم والتقييم</h2>
+
+          <div class="assessment-item">
+            <h3>تقييم البرامج</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_evaluation" id="evaluation-minimum" value="minimum">
+                  <label for="evaluation-minimum">بالحد الأدنى</label>
+                </div>
+                <p>لا يتم تقييم البرامج</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_evaluation" id="evaluation-initial" value="initial">
+                  <label for="evaluation-initial">أولية</label>
+                </div>
+                <p>تقييم البرامج غير منتظم ولا يرتبط بأولويات المؤسسة خطتها الاستراتيجية أو التعلم الذي تراكمه المؤسسة.
+                  هذا التقييم لا يؤثر على اتخاذ القرارات الاستراتيجية أو على تعلم المؤسسة.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_evaluation" id="evaluation-medium" value="medium">
+                  <label for="evaluation-medium">متوسطة</label>
+                </div>
+                <p>يتم تقييم البرامج لكنه غير مرتبط بأولويات المؤسسة، خطتها الاستراتيجية أو التعلم الذي تراكمه. قد يؤثر
+                  التقييم على القرارات الاستراتيجية.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="program_evaluation" id="evaluation-strong" value="strong">
+                  <label for="evaluation-strong">قوية</label>
+                </div>
+                <p>يتم تقييم البرامج بشكل منتظم ويعتمد أصلاً على الأولويات المؤسسية، خطتها الاستراتيجية وأهداف التعلم
+                  التي تتبناها. ما يتم تعلمه من عملية التقييم يتم استخدامه بشكل عضوي وداعم في عمليات اتخاذ القرارات
+                  الاستراتيجية.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>جمع وتحليل المعلومات</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="data_collection" id="data-minimum" value="minimum">
+                  <label for="data-minimum">بالحد الأدنى</label>
+                </div>
+                <p>لا يوجد لدى المؤسسة منظومة معتمدة بشكل رسمي لجمع وتحليل البيانات</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="data_collection" id="data-initial" value="initial">
+                  <label for="data-initial">أولية</label>
+                </div>
+                <p>يوجد لدى المؤسسة منظومة أولية معتمدة بشكل رسمي لجمع وتحليل البيانات لكن لا يتم استخدامها بشكل دوري.
+                  قد يتم النظر إليها أيضاً على أنها تشكل عبئاً وأنها لا تساعد على تعقب التطور نحو النتائج المرغوبة</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="data_collection" id="data-medium" value="medium">
+                  <label for="data-medium">متوسطة</label>
+                </div>
+                <p>يتم استخدام منظومة معتمدة بشكل رسمي لجمع وتحليل البيانات لكن يمكن إعادة تصميمها بشكل أفضل وأكثر
+                  مناسبة ودعماً للأشخاص الذين يستخدمونها ضمن المؤسسة.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="data_collection" id="data-strong" value="strong">
+                  <label for="data-strong">قوية</label>
+                </div>
+                <p>منظومة جمع البيانات وتحليلها مدمجة بشكل فعال في عمل المؤسسة. يتم النظر إليها بشكل إيجابي وعلى أنها
+                  فعالة ومفيدة لأولئك الذين يستخدمونها. البيانات التي يتم جمعها تقدم معلومات مفيدة في تتبع تطور العمل
+                  ووصوله إلى النتائج المرجوة.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>أثر التقييم على المؤسسة</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="evaluation_impact" id="impact-minimum" value="minimum">
+                  <label for="impact-minimum">بالحد الأدنى</label>
+                </div>
+                <p>ليس لدى المؤسسة اهتماماً بالتأمل والتعلم. وليس لديها توقعات بأن البيانات قد تؤثر في استراتيجياتها
+                  وممارساتها.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="evaluation_impact" id="impact-initial" value="initial">
+                  <label for="impact-initial">أولية</label>
+                </div>
+                <p>هناك اهتمام أولي ومصادر بيانات محدودة جداً للتأمل والتعلم، القليل جداً من البيانات يتم استخدامها
+                  لتطوير الاستراتيجيات والممارسات.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="evaluation_impact" id="impact-medium" value="medium">
+                  <label for="impact-medium">متوسطة</label>
+                </div>
+                <p>رغم وجود الاهتمام بالتأمل والتعلم، هناك مصادر محدودة جداً متاحة للبيانات تطوير الاستراتيجيات
+                  والممارسات بناء على البيانات يتم بشكل غير منتظم.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="evaluation_impact" id="impact-strong" value="strong">
+                  <label for="impact-strong">قوية</label>
+                </div>
+                <p>هناك ثقافة داعمة للتأمل والتعلم كما هناك مصادر متاحة ويتم استخدامها ما يتم تعلمه يقود إلى تطوير
+                  الاستراتيجيات والممارسات وتتم مشاركة التعلم داخلياً وخارجياً.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-section">
+            <h3>إضافة الملاحظات</h3>
+            <textarea name="section3_notes" rows="4" placeholder="أضف ملاحظاتك هنا..."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Sector Engagement -->
+      <section id="section4" class="tab-content">
+        <div class="section-card">
+          <h2>٤. إشراك القطاع</h2>
+
+          <div class="assessment-item">
+            <h3>التواصل مع المؤسسات الأخرى</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="sector_communication" id="sector-comm-minimum" value="minimum">
+                  <label for="sector-comm-minimum">بالحد الأدنى</label>
+                </div>
+                <p>لا يوجد تواصل مع المؤسسات الأخرى في القطاع أو المجال.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="sector_communication" id="sector-comm-initial" value="initial">
+                  <label for="sector-comm-initial">أولية</label>
+                </div>
+                <p>هناك تواصل محدود وغير منتظم مع المؤسسات الأخرى في القطاع.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="sector_communication" id="sector-comm-medium" value="medium">
+                  <label for="sector-comm-medium">متوسطة</label>
+                </div>
+                <p>هناك تواصل منتظم مع بعض المؤسسات في القطاع لكن بدون استراتيجية واضحة للتعاون.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="sector_communication" id="sector-comm-strong" value="strong">
+                  <label for="sector-comm-strong">قوية</label>
+                </div>
+                <p>هناك تواصل استراتيجي ومنتظم مع المؤسسات الأخرى في القطاع، مع تبادل المعرفة والخبرات بشكل فعال.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>بناء الشراكات</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="partnerships" id="partnerships-minimum" value="minimum">
+                  <label for="partnerships-minimum">بالحد الأدنى</label>
+                </div>
+                <p>لا توجد شراكات مع مؤسسات أخرى.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="partnerships" id="partnerships-initial" value="initial">
+                  <label for="partnerships-initial">أولية</label>
+                </div>
+                <p>هناك شراكات محدودة وغير رسمية مع بعض المؤسسات.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="partnerships" id="partnerships-medium" value="medium">
+                  <label for="partnerships-medium">متوسطة</label>
+                </div>
+                <p>هناك شراكات رسمية مع بعض المؤسسات لكن بدون استراتيجية واضحة للتعاون المستدام.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="partnerships" id="partnerships-strong" value="strong">
+                  <label for="partnerships-strong">قوية</label>
+                </div>
+                <p>هناك شراكات استراتيجية ومستدامة مع مؤسسات متنوعة تعزز من تحقيق أهداف المؤسسة.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-section">
+            <h3>إضافة الملاحظات</h3>
+            <textarea name="section4_notes" rows="4" placeholder="أضف ملاحظاتك هنا..."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Governance -->
+      <section id="section5" class="tab-content">
+        <div class="section-card">
+          <h2>٥. الحوكمة</h2>
+
+          <div class="assessment-item">
+            <h3>مجلس الإدارة</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="board" id="board-minimum" value="minimum">
+                  <label for="board-minimum">بالحد الأدنى</label>
+                </div>
+                <p>لا يوجد مجلس إدارة فعال أو هيكل حوكمة واضح.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="board" id="board-initial" value="initial">
+                  <label for="board-initial">أولية</label>
+                </div>
+                <p>يوجد مجلس إدارة لكن دوره محدود وغير واضح. الاجتماعات غير منتظمة.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="board" id="board-medium" value="medium">
+                  <label for="board-medium">متوسطة</label>
+                </div>
+                <p>مجلس الإدارة يجتمع بانتظام ولديه دور واضح، لكن مشاركته في التوجيه الاستراتيجي محدودة.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="board" id="board-strong" value="strong">
+                  <label for="board-strong">قوية</label>
+                </div>
+                <p>مجلس الإدارة فعال ومتنوع ويجتمع بانتظام. يقدم توجيهاً استراتيجياً واضحاً ويشرف على أداء المؤسسة
+                  بفعالية.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>السياسات والإجراءات</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="policies" id="policies-minimum" value="minimum">
+                  <label for="policies-minimum">بالحد الأدنى</label>
+                </div>
+                <p>لا توجد سياسات وإجراءات مكتوبة وواضحة.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="policies" id="policies-initial" value="initial">
+                  <label for="policies-initial">أولية</label>
+                </div>
+                <p>توجد بعض السياسات الأساسية لكنها غير شاملة وغير محدثة بانتظام.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="policies" id="policies-medium" value="medium">
+                  <label for="policies-medium">متوسطة</label>
+                </div>
+                <p>توجد سياسات وإجراءات شاملة لكن لا يتم تطبيقها بشكل متسق أو مراجعتها بانتظام.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="policies" id="policies-strong" value="strong">
+                  <label for="policies-strong">قوية</label>
+                </div>
+                <p>توجد سياسات وإجراءات شاملة ومحدثة ويتم تطبيقها بشكل متسق ومراجعتها بانتظام.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-section">
+            <h3>إضافة الملاحظات</h3>
+            <textarea name="section5_notes" rows="4" placeholder="أضف ملاحظاتك هنا..."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sections 6-9 and Priorities continue in the same pattern... -->
+
+      <!-- Section 6: Funding -->
+      <section id="section6" class="tab-content">
+        <div class="section-card">
+          <h2>٦. التمويل</h2>
+
+          <div class="assessment-item">
+            <h3>استدامة التمويل</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="funding_sustainability" id="funding-minimum" value="minimum">
+                  <label for="funding-minimum">بالحد الأدنى</label>
+                </div>
+                <p>التمويل غير مستقر وغير متنوع، مع اعتماد كبير على مصدر واحد.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="funding_sustainability" id="funding-initial" value="initial">
+                  <label for="funding-initial">أولية</label>
+                </div>
+                <p>هناك بعض التنوع في مصادر التمويل لكن بدون استراتيجية واضحة للاستدامة المالية.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="funding_sustainability" id="funding-medium" value="medium">
+                  <label for="funding-medium">متوسطة</label>
+                </div>
+                <p>مصادر التمويل متنوعة نسبياً مع وجود خطة للاستدامة المالية لكنها غير مطبقة بشكل كامل.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="funding_sustainability" id="funding-strong" value="strong">
+                  <label for="funding-strong">قوية</label>
+                </div>
+                <p>مصادر التمويل متنوعة ومستدامة مع استراتيجية واضحة للاستدامة المالية على المدى الطويل.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>الإدارة المالية</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="financial_management" id="financial-minimum" value="minimum">
+                  <label for="financial-minimum">بالحد الأدنى</label>
+                </div>
+                <p>الإدارة المالية ضعيفة مع غياب الأنظمة والضوابط المالية المناسبة.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="financial_management" id="financial-initial" value="initial">
+                  <label for="financial-initial">أولية</label>
+                </div>
+                <p>توجد بعض الأنظمة المالية الأساسية لكنها غير شاملة وغير متسقة.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="financial_management" id="financial-medium" value="medium">
+                  <label for="financial-medium">متوسطة</label>
+                </div>
+                <p>توجد أنظمة مالية جيدة لكن مع بعض الثغرات في الرقابة أو التخطيط المالي.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="financial_management" id="financial-strong" value="strong">
+                  <label for="financial-strong">قوية</label>
+                </div>
+                <p>الإدارة المالية قوية مع أنظمة شاملة للتخطيط والرقابة المالية والتدقيق المنتظم.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-section">
+            <h3>إضافة الملاحظات</h3>
+            <textarea name="section6_notes" rows="4" placeholder="أضف ملاحظاتك هنا..."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7: Management -->
+      <section id="section7" class="tab-content">
+        <div class="section-card">
+          <h2>٧. الإدارة</h2>
+
+          <div class="assessment-item">
+            <h3>الهيكل التنظيمي</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="organizational_structure" id="structure-minimum" value="minimum">
+                  <label for="structure-minimum">بالحد الأدنى</label>
+                </div>
+                <p>الهيكل التنظيمي غير واضح أو غير موجود.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="organizational_structure" id="structure-initial" value="initial">
+                  <label for="structure-initial">أولية</label>
+                </div>
+                <p>يوجد هيكل تنظيمي أساسي لكن الأدوار والمسؤوليات غير محددة بوضوح.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="organizational_structure" id="structure-medium" value="medium">
+                  <label for="structure-medium">متوسطة</label>
+                </div>
+                <p>الهيكل التنظيمي واضح مع تحديد الأدوار والمسؤوليات لكن مع بعض التداخل أو الثغرات.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="organizational_structure" id="structure-strong" value="strong">
+                  <label for="structure-strong">قوية</label>
+                </div>
+                <p>الهيكل التنظيمي واضح ومناسب لحجم وأهداف المؤسسة مع تحديد دقيق للأدوار والمسؤوليات.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>إدارة الموارد البشرية</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="hr_management" id="hr-minimum" value="minimum">
+                  <label for="hr-minimum">بالحد الأدنى</label>
+                </div>
+                <p>لا توجد سياسات أو إجراءات واضحة لإدارة الموارد البشرية.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="hr_management" id="hr-initial" value="initial">
+                  <label for="hr-initial">أولية</label>
+                </div>
+                <p>توجد بعض السياسات الأساسية للموارد البشرية لكنها غير شاملة وغير مطبقة بشكل متسق.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="hr_management" id="hr-medium" value="medium">
+                  <label for="hr-medium">متوسطة</label>
+                </div>
+                <p>توجد سياسات شاملة للموارد البشرية لكن مع بعض الثغرات في التطبيق أو التطوير المهني.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="hr_management" id="hr-strong" value="strong">
+                  <label for="hr-strong">قوية</label>
+                </div>
+                <p>إدارة الموارد البشرية قوية مع سياسات شاملة وفرص للتطوير المهني وتقييم الأداء بشكل منتظم.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-section">
+            <h3>إضافة الملاحظات</h3>
+            <textarea name="section7_notes" rows="4" placeholder="أضف ملاحظاتك هنا..."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8: Organizational Culture -->
+      <section id="section8" class="tab-content">
+        <div class="section-card">
+          <h2>٨. الثقافة المؤسسية</h2>
+
+          <div class="assessment-item">
+            <h3>القيم المؤسسية</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="organizational_values" id="values-minimum" value="minimum">
+                  <label for="values-minimum">بالحد الأدنى</label>
+                </div>
+                <p>القيم المؤسسية غير محددة أو غير معروفة للموظفين.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="organizational_values" id="values-initial" value="initial">
+                  <label for="values-initial">أولية</label>
+                </div>
+                <p>القيم المؤسسية محددة لكنها غير مدمجة في ثقافة المؤسسة أو ممارساتها اليومية.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="organizational_values" id="values-medium" value="medium">
+                  <label for="values-medium">متوسطة</label>
+                </div>
+                <p>القيم المؤسسية واضحة ومعروفة للموظفين لكن تطبيقها غير متسق.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="organizational_values" id="values-strong" value="strong">
+                  <label for="values-strong">قوية</label>
+                </div>
+                <p>القيم المؤسسية واضحة ومدمجة بشكل كامل في ثقافة المؤسسة وممارساتها اليومية.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>بيئة العمل</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="work_environment" id="environment-minimum" value="minimum">
+                  <label for="environment-minimum">بالحد الأدنى</label>
+                </div>
+                <p>بيئة العمل غير داعمة مع ضعف في التواصل والتعاون بين الموظفين.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="work_environment" id="environment-initial" value="initial">
+                  <label for="environment-initial">أولية</label>
+                </div>
+                <p>بيئة العمل مقبولة لكن مع محدودية في التواصل المفتوح والتعاون.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="work_environment" id="environment-medium" value="medium">
+                  <label for="environment-medium">متوسطة</label>
+                </div>
+                <p>بيئة العمل داعمة نسبياً مع وجود تواصل وتعاون جيد بين معظم الموظفين.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="work_environment" id="environment-strong" value="strong">
+                  <label for="environment-strong">قوية</label>
+                </div>
+                <p>بيئة العمل داعمة بشكل كبير مع تواصل مفتوح وتعاون قوي بين جميع الموظفين.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-section">
+            <h3>إضافة الملاحظات</h3>
+            <textarea name="section8_notes" rows="4" placeholder="أضف ملاحظاتك هنا..."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 9: Executive Leadership -->
+      <section id="section9" class="tab-content">
+        <div class="section-card">
+          <h2>٩. القيادة التنفيذية</h2>
+
+          <div class="assessment-item">
+            <h3>فعالية القيادة</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="leadership_effectiveness" id="leadership-minimum" value="minimum">
+                  <label for="leadership-minimum">بالحد الأدنى</label>
+                </div>
+                <p>القيادة التنفيذية غير فعالة مع ضعف في الرؤية والتوجيه الاستراتيجي.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="leadership_effectiveness" id="leadership-initial" value="initial">
+                  <label for="leadership-initial">أولية</label>
+                </div>
+                <p>القيادة التنفيذية تقدم بعض التوجيه لكن مع محدودية في الرؤية الاستراتيجية والتنفيذ.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="leadership_effectiveness" id="leadership-medium" value="medium">
+                  <label for="leadership-medium">متوسطة</label>
+                </div>
+                <p>القيادة التنفيذية فعالة نسبياً مع رؤية واضحة لكن مع بعض التحديات في التنفيذ.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="leadership_effectiveness" id="leadership-strong" value="strong">
+                  <label for="leadership-strong">قوية</label>
+                </div>
+                <p>القيادة التنفيذية فعالة للغاية مع رؤية واضحة وقدرة قوية على التنفيذ والتحفيز.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>التخطيط للتعاقب القيادي</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="succession_planning" id="succession-minimum" value="minimum">
+                  <label for="succession-minimum">بالحد الأدنى</label>
+                </div>
+                <p>لا توجد خطة للتعاقب القيادي.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="succession_planning" id="succession-initial" value="initial">
+                  <label for="succession-initial">أولية</label>
+                </div>
+                <p>هناك بعض الأفكار حول التعاقب القيادي لكن بدون خطة رسمية.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="succession_planning" id="succession-medium" value="medium">
+                  <label for="succession-medium">متوسطة</label>
+                </div>
+                <p>توجد خطة رسمية للتعاقب القيادي لكنها غير شاملة أو غير مطبقة بشكل كامل.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="succession_planning" id="succession-strong" value="strong">
+                  <label for="succession-strong">قوية</label>
+                </div>
+                <p>توجد خطة شاملة ومطبقة للتعاقب القيادي مع تطوير مستمر للقيادات المستقبلية.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-section">
+            <h3>إضافة الملاحظات</h3>
+            <textarea name="section9_notes" rows="4" placeholder="أضف ملاحظاتك هنا..."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Priorities Section -->
+      <section id="priorities" class="tab-content">
+        <div class="section-card">
+          <h2>تمرين وضع الأولويات</h2>
+
+          <div class="priority-section">
+            <h3>الأولوية الأولى</h3>
+            <textarea name="priority1_description" rows="3"
+              placeholder="يرجى إدراج أولويتكم الأولى وفقاً للتمرين السابق." required></textarea>
+
+            <h4>النتائج المتوقعة</h4>
+            <textarea name="priority1_results" rows="3"
+              placeholder="ما هي النتا��ج المتوقعة لهذه الأولوية في السنوات القليلة القادمة؟ ما هو الشكل الذي سيتخذه النجاح؟"
+              required></textarea>
+
+            <h4>خطوات العمل</h4>
+            <textarea name="priority1_steps" rows="3"
+              placeholder="ما الذي سيتعين على المؤسسة أن تقوم به بالتحديد لتصبح أقوى في هذا المجال؟"
+              required></textarea>
+
+            <h4>الدعم المطلوب</h4>
+            <textarea name="priority1_support" rows="3"
+              placeholder="ما الدعم الذي يحتاجه فريق المؤسسة من الأفراد / المؤسسات / الجهات المانحة من خارج المؤسسة؟"
+              required></textarea>
+          </div>
+
+          <div class="priority-section">
+            <h3>الأولوية الثانية</h3>
+            <textarea name="priority2_description" rows="3"
+              placeholder="يرجى إدراج أولويتكم الثانية وفقاً للتمرين السابق." required></textarea>
+
+            <h4>النتائج المتوقعة</h4>
+            <textarea name="priority2_results" rows="3"
+              placeholder="ما هي النتائج المتوقعة لهذه الأولوية في السنوات القليلة القادمة؟ ما هو الشكل الذي سيتخذه النجاح؟"
+              required></textarea>
+
+            <h4>خطوات العمل</h4>
+            <textarea name="priority2_steps" rows="3"
+              placeholder="ما الذي سيتعين على المؤسسة أن تقوم به بالتحديد لتصبح أقوى في هذا المجال؟"
+              required></textarea>
+
+            <h4>الدعم المطلوب</h4>
+            <textarea name="priority2_support" rows="3"
+              placeholder="ما الدعم الذي يحتاجه فريق المؤسسة من الأفراد / المؤسسات / الجهات المانحة من خارج المؤسسة؟"
+              required></textarea>
+          </div>
+
+          <div class="priority-section">
+            <h3>الأولوية الثالثة</h3>
+            <textarea name="priority3_description" rows="3"
+              placeholder="يرجى إدراج أولويتكم الثالثة وفقاً للتمرين السابق." required></textarea>
+
+            <h4>النتائج المتوقعة</h4>
+            <textarea name="priority3_results" rows="3"
+              placeholder="ما هي النتائج المتوقعة لهذه الأولوية في السنوات القليلة القادمة؟ ما هو الشكل الذي سيتخذه النجاح؟"
+              required></textarea>
+
+            <h4>خطوات العمل</h4>
+            <textarea name="priority3_steps" rows="3"
+              placeholder="ما الذي سيتعين على المؤسسة أن تقوم به بالتحديد لتصبح أقوى في هذا المجال؟"
+              required></textarea>
+
+            <h4>الدعم المطلوب</h4>
+            <textarea name="priority3_support" rows="3"
+              placeholder="ما الدعم الذي يحتاجه فريق المؤسسة من الأفراد / المؤسسات / الجهات المانحة من خارج المؤسسة؟"
+              required></textarea>
+          </div>
+        </div>
+      </section>
+
+      <div class="form-actions">
+        <button type="submit" class="submit-btn">حفظ وإرسال التقييم</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      // Basic client-side validation
+      let valid = true;
+      const radioGroups = document.querySelectorAll('.options-grid');
+
+      radioGroups.forEach(group => {
+        const radios = group.querySelectorAll('input[type="radio"]');
+        let isChecked = false;
+        radios.forEach(radio => {
+          if (radio.checked) {
+            isChecked = true;
+          }
+        });
+        if (!isChecked) {
+          alert('الرجاء تحديد خيار واحد على الأقل لكل سؤال.');
+          valid = false;
+        }
+      });
+
+      const notes = document.querySelectorAll('textarea[name$="_notes"]');
+      notes.forEach(note => {
+        if (note.value.trim() === '') {
+          alert('الرجاء إضافة ملاحظاتك لكل قسم.');
+          valid = false;
+        }
+      });
+
+      const priorities = document.querySelectorAll('textarea[name^="priority"]');
+      priorities.forEach(priority => {
+        if (priority.value.trim() === '') {
+          alert('الرجاء ملء جميع حقول الأولويات.');
+          valid = false;
+        }
+      });
+
+      return valid;
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
