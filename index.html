@@ -15,7 +15,10 @@
       <p>أداة المسح المؤسسي (The Organizational Mapping Tool - OMT) هي بالأصل أداة تم تطويرها من قبل مؤسسة فورد وتم
         تعديلها لتتوافق مع طبيعة المؤسسات</p>
       <p>الهدف من هذه الأداة هو مساعدة فريق عمل المؤسسة على فهم نقاط قوة مؤسستهم، وتحديد مجالات التطوير التي يحتاجون
-        إليها من خلال بناء فهم مشترك للجوانب المؤسسية الرئيسة.</p>
+        إليها من خلال بناء فهم مشترك للجوانب المؤسسية الرئيسة.</p><p> تساعدكم هذه الأداة لكي تفهموا مؤسستكم بمنظور متكامل، وفهم ما الجوانب التي تميزها، حين يتم تحديد الحاجة
+إلى التطوير، فإن نتائج الأداة تسمح لكم بتحديد أدوات التطوير والتخطيط له.
+
+تم تطوير الأداة بشكل يخدم مع مؤسسات من أعمار وأحجام مختلفة من المؤسسات الصغيرة إلى المؤسسات الأكبر والأكثر تعقيداً في بنيتها.</p>
     </header>
 
     <form id="organizationalForm" action="https://formspree.io/f/xkgrglpw" method="POST"
@@ -34,13 +37,13 @@
         <button type="button" class="tab-btn active" data-tab="section1">١. الرسالة والاستراتيجية</button>
         <button type="button" class="tab-btn" data-tab="section2">٢. البرامج والمشاريع</button>
         <button type="button" class="tab-btn" data-tab="section3">٣. التعلم والتقييم</button>
-        <button type="button" class="tab-btn" data-tab="section4">٤. إشراك القطاع</button>
+        <button type="button" class="tab-btn" data-tab="section4">إشراك القطاع أو السياق المعني</button>
         <button type="button" class="tab-btn" data-tab="section5">٥. الحوكمة</button>
-        <button type="button" class="tab-btn" data-tab="section6">٦. التمويل</button>
+        <button type="button" class="tab-btn" data-tab="section6"> ٦. التمويل والعلاقة مع الجهات المانحة </button>
         <button type="button" class="tab-btn" data-tab="section7">٧. الإدارة</button>
         <button type="button" class="tab-btn" data-tab="section8">٨. الثقافة المؤسسية</button>
         <button type="button" class="tab-btn" data-tab="section9">٩. القيادة التنفيذية</button>
-        <button type="button" class="tab-btn" data-tab="priorities">الأولويات</button>
+        <button type="button" class="tab-btn" data-tab="priorities">تمرين وضع الأولويات</button>
       </div>
 
       <!-- Section 1: Mission and Strategy -->
@@ -101,6 +104,7 @@
                   <label for="goals-initial">أولية</label>
                 </div>
                 <p>يوجد أهداف بعيدة واضحة لكنها غير ملموسة وغير قابلة للتحقق بالضرورة ولا يوجد أهداف قصيرة الأمد</p>
+                <p>بعض أعضاء فريق العمل و مجلس الإدارة قادر على شرح الأهداف القصيرة رغم أنها غير مكتوبة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
@@ -130,7 +134,7 @@
                   <label for="strategic-minimum">بالحد الأدنى</label>
                 </div>
                 <p>لا يوجد لدى المؤسسة خطة استراتيجية مكتوبة ويمكن أن يكون عمل المؤسسة مشتتاً ولا يتم العمل على تعزيز
-                  التواصل بين المشاريع المختلفة.</p>
+                  التواصل(Synergy) بين المشاريع المختلفة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
@@ -419,38 +423,38 @@
       <!-- Section 4: Sector Engagement -->
       <section id="section4" class="tab-content">
         <div class="section-card">
-          <h2>٤. إشراك القطاع</h2>
+          <h2>٤. إشراك القطاع أو السياق المعني</h2>
 
           <div class="assessment-item">
-            <h3>التواصل مع المؤسسات الأخرى</h3>
+            <h3>التعاون</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
                   <input type="radio" name="sector_communication" id="sector-comm-minimum" value="minimum">
                   <label for="sector-comm-minimum">بالحد الأدنى</label>
                 </div>
-                <p>لا يوجد تواصل مع المؤسسات الأخرى في القطاع أو المجال.</p>
+                <p>معرفة قليلة وغياب تام للتعاون مع لاعبين أساسيين آخرين في مجال العمل.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
                   <input type="radio" name="sector_communication" id="sector-comm-initial" value="initial">
                   <label for="sector-comm-initial">أولية</label>
                 </div>
-                <p>هناك تواصل محدود وغير منتظم مع المؤسسات الأخرى في القطاع.</p>
+                <p>هناك معرفة باللاعبين الأساسيين لكن التعاون المباشر محدود جداً.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
                   <input type="radio" name="sector_communication" id="sector-comm-medium" value="medium">
                   <label for="sector-comm-medium">متوسطة</label>
                 </div>
-                <p>هناك تواصل منتظم مع بعض المؤسسات في القطاع لكن بدون استراتيجية واضحة للتعاون.</p>
+                <p>هناك معرفة باللاعبين الأساسيين في المجال وعدد من التعاونات الإيجابية معهم.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
                   <input type="radio" name="sector_communication" id="sector-comm-strong" value="strong">
                   <label for="sector-comm-strong">قوية</label>
                 </div>
-                <p>هناك تواصل استراتيجي ومنتظم مع المؤسسات الأخرى في القطاع، مع تبادل المعرفة والخبرات بشكل فعال.</p>
+                <p>تعاونات متمكنة، قوية وفعالة مع اللاعبين الأساسيين في مجال العمل على المستوى المحلي الوطني، الإقليمي والدولي.</p>
               </div>
             </div>
           </div>
