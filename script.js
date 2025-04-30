@@ -131,20 +131,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // Check section notes
+    // Les notes de section ne sont plus obligatoires
     const sectionNotes = document.querySelectorAll('textarea[name$="_notes"]')
     sectionNotes.forEach((note) => {
-      if (!note.value.trim()) {
-        isValid = false
-        note.classList.add("error")
-
-        const section = note.closest(".tab-content")
-        if (!firstInvalidSection && section) {
-          firstInvalidSection = section
-        }
-      } else {
-        note.classList.remove("error")
-      }
+      // Supprimer toute classe d'erreur existante
+      note.classList.remove("error")
     })
 
     // If form is not valid, show error message and switch to first invalid section
