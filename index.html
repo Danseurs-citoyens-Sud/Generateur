@@ -15,14 +15,14 @@
       <p>أداة المسح المؤسسي (The Organizational Mapping Tool - OMT) هي بالأصل أداة تم تطويرها من قبل مؤسسة فورد وتم
         تعديلها لتتوافق مع طبيعة المؤسسات</p>
       <p>الهدف من هذه الأداة هو مساعدة فريق عمل المؤسسة على فهم نقاط قوة مؤسستهم، وتحديد مجالات التطوير التي يحتاجون
-        إليها من خلال بناء فهم مشترك للجوانب المؤسسية الرئيسة.</p><p> تتيح هذه الأداة لكي تفهموا مؤسستكم بمنظور متكامل، وفهم ما الجوانب التي تميزها، حين يتم تحديد الحاجة
-إلى التطوير، فإن نتائج الأداة تسمح لكم بتحديد أدوات التطوير والتخطيط له.
+        إليها من خلال بناء فهم مشترك للجوانب المؤسسية الرئيسة.</p>
+      <p>تتيح هذه الأداة لكي تفهموا مؤسستكم بمنظور متكامل، وفهم ما الجوانب التي تميزها، حين يتم تحديد الحاجة
+        إلى التطوير، فإن نتائج الأداة تسمح لكم بتحديد أدوات التطوير والتخطيط له.
 
-تم تطوير الأداة بشكل يخدم مع مؤسسات من أعمار وأحجام مختلفة من المؤسسات الصغيرة إلى المؤسسات الأكبر والأكثر تعقيداً في بنيتها.</p>
+        تم تطوير الأداة بشكل يخدم مع مؤسسات من أعمار وأحجام مختلفة من المؤسسات الصغيرة إلى المؤسسات الأكبر والأكثر تعقيداً في بنيتها.</p>
     </header>
 
-    <form id="organizationalForm" action="https://formspree.io/f/xkgrglpw" method="POST"
-      onsubmit="return validateForm()">
+    <form id="organizationalForm" action="https://formspree.io/f/xkgrglpw" method="POST">
       <!-- Organization Information -->
       <div class="org-info">
         <h2>معلومات المؤسسة</h2>
@@ -37,9 +37,9 @@
         <button type="button" class="tab-btn active" data-tab="section1">١. الرسالة والاستراتيجية</button>
         <button type="button" class="tab-btn" data-tab="section2">٢. البرامج والمشاريع</button>
         <button type="button" class="tab-btn" data-tab="section3">٣. التعلم والتقييم</button>
-        <button type="button" class="tab-btn" data-tab="section4">إشراك القطاع أو السياق المعني</button>
+        <button type="button" class="tab-btn" data-tab="section4">٤. إشراك القطاع أو السياق المعني</button>
         <button type="button" class="tab-btn" data-tab="section5">٥. الحوكمة</button>
-        <button type="button" class="tab-btn" data-tab="section6"> ٦. التمويل والعلاقة مع الجهات المانحة </button>
+        <button type="button" class="tab-btn" data-tab="section6">٦. التمويل والعلاقة مع الجهات المانحة</button>
         <button type="button" class="tab-btn" data-tab="section7">٧. الإدارة</button>
         <button type="button" class="tab-btn" data-tab="section8">٨. الثقافة المؤسسية</button>
         <button type="button" class="tab-btn" data-tab="section9">٩. القيادة التنفيذية</button>
@@ -460,7 +460,7 @@
           </div>
 
           <div class="assessment-item">
-            <h3>دور المؤسسة في الحراكات أو التوجهات العامة </h3>
+            <h3>دور المؤسسة في الحراكات أو التوجهات العامة</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
@@ -492,34 +492,35 @@
               </div>
             </div>
           </div>
-            <div class="assessment-item">
-            <h3>سمعة المؤسسة في مجال العمل </h3>
+
+          <div class="assessment-item">
+            <h3>سمعة المؤسسة في مجال العمل</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="partnerships" id="partnerships-minimum" value="minimum">
-                  <label for="partnerships-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="reputation" id="reputation-minimum" value="minimum">
+                  <label for="reputation-minimum">بالحد الأدنى</label>
                 </div>
                 <p>للمؤسسة سمعة أنها لا تقوم بتعاونات مع مؤسسات أخرى.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="partnerships" id="partnerships-initial" value="initial">
-                  <label for="partnerships-initial">أولية</label>
+                  <input type="radio" name="reputation" id="reputation-initial" value="initial">
+                  <label for="reputation-initial">أولية</label>
                 </div>
                 <p>للمؤسسة سمعة أنها تعمل بشكل جيد مع عدد محدود من المؤسسات الأخرى ولكن ليس مع بقية المعنيين.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="partnerships" id="partnerships-medium" value="medium">
-                  <label for="partnerships-medium">متوسطة</label>
+                  <input type="radio" name="reputation" id="reputation-medium" value="medium">
+                  <label for="reputation-medium">متوسطة</label>
                 </div>
                 <p>المؤسسة تعمل بشكل جيد مع المؤسسات الأخرى واغلبها تتحدث عن سمعتها بشكل جيد جداًا.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="partnerships" id="partnerships-strong" value="strong">
-                  <label for="partnerships-strong">قوية</label>
+                  <input type="radio" name="reputation" id="reputation-strong" value="strong">
+                  <label for="reputation-strong">قوية</label>
                 </div>
                 <p>تعتبر المؤسسة نموذجا للمؤسسات الأخرى في التعاونات والعمل الجماعي.</p>
               </div>
@@ -539,33 +540,33 @@
           <h2>٥. الحوكمة</h2>
 
           <div class="assessment-item">
-            <h3>عضوية الهيئة الإدارية الرئيسية المعنية بالحوكمة </h3>
+            <h3>عضوية الهيئة الإدارية الرئيسية المعنية بالحوكمة</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="board" id="board-minimum" value="minimum">
-                  <label for="board-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="board_membership" id="board-membership-minimum" value="minimum">
+                  <label for="board-membership-minimum">بالحد الأدنى</label>
                 </div>
                 <p>ينتمي أعضاء الهيئة الإدارية الرئيسية إلى عدد محدود من المجالات، وليس لديهم ما يكفي من الخبرة ذات الصلة ولا يُمثل أيا منهم المجموعات المهمشة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="board" id="board-initial" value="initial">
-                  <label for="board-initial">أولية</label>
+                  <input type="radio" name="board_membership" id="board-membership-initial" value="initial">
+                  <label for="board-membership-initial">أولية</label>
                 </div>
                 <p>ينتمي أعضاء الهيئة الإدارية الرئيسية إلى بضعة مجالات وفي الهيئة الإدارية الرئيسية يتم تمثيل الفئات المهمشة بالحد الأدنى ويملك بعض الأعضاء خبرة ذات صلة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="board" id="board-medium" value="medium">
-                  <label for="board-medium">متوسطة</label>
+                  <input type="radio" name="board_membership" id="board-membership-medium" value="medium">
+                  <label for="board-membership-medium">متوسطة</label>
                 </div>
                 <p>ينتمي أعضاء الهيئة الإدارية الرئيسية إلى عدد من المجالات المناسبة، ويجري تمثيل المجموعات المهمشة؛ يملك معظم الأعضاء خبرة ذات صلة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="board" id="board-strong" value="strong">
-                  <label for="board-strong">قوية</label>
+                  <input type="radio" name="board_membership" id="board-membership-strong" value="strong">
+                  <label for="board-membership-strong">قوية</label>
                 </div>
                 <p>ينتمي أعضاء الهيئة الإدارية الرئيسية إلى مجموعة واسعة من المجالات الملائمة؛ تكون المجموعات المهمشة ممثلة على نحو جيد؛ يملك الأعضاء خبرة واسعة ويتمتعون بالمهارة العملية.</p>
               </div>
@@ -573,168 +574,175 @@
           </div>
 
           <div class="assessment-item">
-            <h3>سياسات الهيئة الإدارية الرئيسية </h3>
+            <h3>سياسات الهيئة الإدارية الرئيسية</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-minimum" value="minimum">
-                  <label for="policies-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="board_policies" id="board-policies-minimum" value="minimum">
+                  <label for="board-policies-minimum">بالحد الأدنى</label>
                 </div>
                 <p>لم يتم وضع أي سياسات خاصة بالهيئة الإدارية الرئيسية بشأن مسائل مرتبطة بمدة ولاية الهيئة وبتعارض المصالح وبتوجه الهيئة الإدارية على سبيل المثال.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-initial" value="initial">
-                  <label for="policies-initial">أولية</label>
-                </div>تم وضع سياسات بشأن مسائل مرتبطة بمدة ولاية الهيئة الإدارية الرئيسية وبتعارض المصالح وبتوجه الهيئة على سبيل المثال ولكن الهئية لا تطبقها.</p>
+                  <input type="radio" name="board_policies" id="board-policies-initial" value="initial">
+                  <label for="board-policies-initial">أولية</label>
+                </div>
+                <p>تم وضع سياسات بشأن مسائل مرتبطة بمدة ولاية الهيئة الإدارية الرئيسية وبتعارض المصالح وبتوجه الهيئة على سبيل المثال ولكن الهئية لا تطبقها.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-medium" value="medium">
-                  <label for="policies-medium">متوسطة</label>
+                  <input type="radio" name="board_policies" id="board-policies-medium" value="medium">
+                  <label for="board-policies-medium">متوسطة</label>
                 </div>
                 <p>تم وضع سياسات بشأن مسائل مرتبطة بمدة ولاية الهيئة الإدارية الرئيسية وبتعارض المصالح وبتوجه الهيئة على سبيل المثال وتقوم الهيئة بتطبيقها.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-strong" value="strong">
-                  <label for="policies-strong">قوية</label>
+                  <input type="radio" name="board_policies" id="board-policies-strong" value="strong">
+                  <label for="board-policies-strong">قوية</label>
                 </div>
                 <p>تعكس سياسات الهيئة الإدارية الرئيسية الممارسة المثلى بشأن مسائل مرتبطة بمدة ولاية الهيئة وبتعارض المصالح وبتوجه المجلس على سبيل المثال، وتقوم الهيئة بتطبيقها بصورة وثيقة.</p>
               </div>
             </div>
           </div>
-<div class="assessment-item">
-            <h3>اجتماعات الهيئة الإدارية الرئيسية  </h3>
+
+          <div class="assessment-item">
+            <h3>اجتماعات الهيئة الإدارية الرئيسية</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="board" id="board-minimum" value="minimum">
-                  <label for="board-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="board_meetings" id="board-meetings-minimum" value="minimum">
+                  <label for="board-meetings-minimum">بالحد الأدنى</label>
                 </div>
                 <p>لا تنعقد الاجتماعات بشكل منتظم، ولا يحضرها سوى عدد قليل من الأعضاء، كما أنها لا تكون موثقة على نحو جيد وتفضي أو قد تفضي إلى عملية اتخاذ القرارات بطريقة غير شقافة؛ غالباً ما تتخللها توثرات.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="board" id="board-initial" value="initial">
-                  <label for="board-initial">أولية</label>
+                  <input type="radio" name="board_meetings" id="board-meetings-initial" value="initial">
+                  <label for="board-meetings-initial">أولية</label>
                 </div>
                 <p>تنعقد الاجتماعات بشكل منتظم إلا أن نسبة المشاركة فيها وعملية توثيقها لا تكونان دائماً جيدتين؛ غالباً ما تؤدي الاجتماعات إلى اتخاذ قرارات غير شفافة ونادرا ما تحدث توثراتة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="board" id="board-medium" value="medium">
-                  <label for="board-medium">متوسطة</label>
+                  <input type="radio" name="board_meetings" id="board-meetings-medium" value="medium">
+                  <label for="board-meetings-medium">متوسطة</label>
                 </div>
-                <p>تجري معظم الاجتماعات بسلاسة، وتكون فيها نسبة الحضور جيدة وعملية التوثيق جيدة أيضاً؛ تتميز عملية اتخاذ القرارات بالشفافية. لا توفر الاجتماعات دائماً فرصة كافية للانخراط في نقاشات استراتيجية..</p>
+                <p>تجري معظم الاجتماعات بسلاسة، وتكون فيها نسبة الحضور جيدة وعملية التوثيق جيدة أيضاً؛ تتميز عملية اتخاذ القرارات بالشفافية. لا توفر الاجتماعات دائماً فرصة كافية للانخراط في نقاشات استراتيجية.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="board" id="board-strong" value="strong">
-                  <label for="board-strong">قوية</label>
+                  <input type="radio" name="board_meetings" id="board-meetings-strong" value="strong">
+                  <label for="board-meetings-strong">قوية</label>
                 </div>
-                <p>يتم التخطيط بشكل جيد للاجتماعات المنتظمة وتوثيفها والمشاركة فيها تؤدي الاجتماعات المنتظمة إلى اتخاذ قرارات شفافة واستراتيجية وإلى بناء علاقات مثمرة..</p>
+                <p>يتم التخطيط بشكل جيد للاجتماعات المنتظمة وتوثيفها والمشاركة فيها تؤدي الاجتماعات المنتظمة إلى اتخاذ قرارات شفافة واستراتيجية وإلى بناء علاقات مثمرة.</p>
               </div>
             </div>
           </div>
 
           <div class="assessment-item">
-            <h3>علاقة الهيئة الإدارية الرئيسية / أعضاء الفريق  </h3>
+            <h3>علاقة الهيئة الإدارية الرئيسية / أعضاء الفريق</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-minimum" value="minimum">
-                  <label for="policies-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="board_team_relation" id="board-team-minimum" value="minimum">
+                  <label for="board-team-minimum">بالحد الأدنى</label>
                 </div>
                 <p>تكون الهيئة الإدارية الرئيسية وأعضاء الفريق على خلاف مع بعضهما. وتتسم علاقتهما بانعدام التواصل والثقة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-initial" value="initial">
-                  <label for="policies-initial">أولية</label>
-                </div>تكون العلاقة متوترة ما بين الهيئة الإدارية الرئيسية وأعضاء الفريق، وغالباً ما يسيتان فهم بعضهما.</p>
+                  <input type="radio" name="board_team_relation" id="board-team-initial" value="initial">
+                  <label for="board-team-initial">أولية</label>
+                </div>
+                <p>تكون العلاقة متوترة ما بين الهيئة الإدارية الرئيسية وأعضاء الفريق، وغالباً ما يسيتان فهم بعضهما.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-medium" value="medium">
-                  <label for="policies-medium">متوسطة</label>
+                  <input type="radio" name="board_team_relation" id="board-team-medium" value="medium">
+                  <label for="board-team-medium">متوسطة</label>
                 </div>
                 <p>تتواصل الهيئة الإدارية الرئيسية وأعضاء الفريق مع بعضهما بشكل جيد نسبياً ولكن أحيانا قد يتخلل العلاقة سوء تواصل</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-strong" value="strong">
-                  <label for="policies-strong">قوية</label>
+                  <input type="radio" name="board_team_relation" id="board-team-strong" value="strong">
+                  <label for="board-team-strong">قوية</label>
                 </div>
                 <p>تعمل الهيئة الإدارية الرئيسية وأعضاء الفريق معاً بشكل مثالي، مع التركيز على تحقيق رسالة المؤسسة/ تكون قنوات التواصل مفتوحة ما بين الهيئة الإدارية الرئيسية وأعضاء الفريق، ويدعم الطرفان بعضهما من أجل ضمان سير وفعالية العمل.</p>
               </div>
             </div>
           </div>
-          
+
           <div class="assessment-item">
-            <h3>المساهمات </h3>
+            <h3>المساهمات</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-minimum" value="minimum">
-                  <label for="policies-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="board_contributions" id="board-contributions-minimum" value="minimum">
+                  <label for="board-contributions-minimum">بالحد الأدنى</label>
                 </div>
                 <p>لا يقوم أعضاء الهيئة الإدارية الرئيسية بالمساهمة في موارد المؤسسة أو بالمساعدة في الحصول على موارد.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-initial" value="initial">
-                  <label for="policies-initial">أولية</label>
-                </div>يقوم بعض أعضاء الهيئة الإدارية الرئيسية بالمساهمة في موارد المؤسسة و/أو بالمساعدة في الحصول على موارد.ا.</p>
+                  <input type="radio" name="board_contributions" id="board-contributions-initial" value="initial">
+                  <label for="board-contributions-initial">أولية</label>
+                </div>
+                <p>يقوم بعض أعضاء الهيئة الإدارية الرئيسية بالمساهمة في موارد المؤسسة و/أو بالمساعدة في الحصول على موارد.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-medium" value="medium">
-                  <label for="policies-medium">متوسطة</label>
+                  <input type="radio" name="board_contributions" id="board-contributions-medium" value="medium">
+                  <label for="board-contributions-medium">متوسطة</label>
                 </div>
                 <p>يقوم معظم أعضاء الهيئة الإدارية الرئيسية بالمساهمة في موارد المؤسسة و/ أو بالمساعدة في الحصول على موارد.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-strong" value="strong">
-                  <label for="policies-strong">قوية</label>
+                  <input type="radio" name="board_contributions" id="board-contributions-strong" value="strong">
+                  <label for="board-contributions-strong">قوية</label>
                 </div>
                 <p>يقوم أعضاء الهيئة الإدارية الرئيسية كافة بالمساهمة بشكل فعال في موارد المؤسسة و/أو بالمساعدة في الحصول على موارد.</p>
               </div>
             </div>
           </div>
+
           <div class="assessment-item">
-            <h3>الاجتماع العام السنوي / الجمعية العمومية (في حال ينطبق ذلك على المؤسسة)  </h3>
+            <h3>الاجتماع العام السنوي / الجمعية العمومية (في حال ينطبق ذلك على المؤسسة)</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-minimum" value="minimum">
-                  <label for="policies-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="annual_meeting" id="annual-meeting-minimum" value="minimum">
+                  <label for="annual-meeting-minimum">بالحد الأدنى</label>
                 </div>
                 <p>نادراً ما تنعقد الجمعية العمومية لا تتم مراجعة الاستراتيجيات ولا الإفصاح عن التقارير المالية لا يؤدي الأعضاء الأدوار المنوطة بهم /لا يتم اللجوء إلى عملية التصويت لا تكون الإرشادات المتعلقة بالعضوية واضحة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-initial" value="initial">
-                  <label for="policies-initial">أولية</label>
-                </div>نعقد الجمعية العمومية كل بضع سنوات بمشاركة الأعضاء في مناقشة سير التنظيم. يعد هذا مهمًا للوصول إلى توافق، لا سيما في القرارات الكبرى. يتمثل عمل الجمعية العمومية في جمع وجهات نظر الأعضاء المختلفة بشأن عملية التنظيم بطريقة حيوية، ديمقراطية وشفافة، مع تحديد الأدوار والمسؤوليات.</p>
+                  <input type="radio" name="annual_meeting" id="annual-meeting-initial" value="initial">
+                  <label for="annual-meeting-initial">أولية</label>
+                </div>
+                <p>نعقد الجمعية العمومية كل بضع سنوات بمشاركة الأعضاء في مناقشة سير التنظيم. يعد هذا مهمًا للوصول إلى توافق، لا سيما في القرارات الكبرى. يتمثل عمل الجمعية العمومية في جمع وجهات نظر الأعضاء المختلفة بشأن عملية التنظيم بطريقة حيوية، ديمقراطية وشفافة، مع تحديد الأدوار والمسؤوليات.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-medium" value="medium">
-                  <label for="policies-medium">متوسطة</label>
+                  <input type="radio" name="annual_meeting" id="annual-meeting-medium" value="medium">
+                  <label for="annual-meeting-medium">متوسطة</label>
                 </div>
-                <p> نعقد الجمعية العمومية بشكل عام، ولكن يمكن التنظيم بشكل أفضل للاجتماع: يتم اتخاذ قرارات استراتيجية، ولكن عملية التحضير عن سيرها يتم عرض كافة التقارير المالية، وكل تقرير من ما سبق. ويكون من المناسب أحيانًا الحديث بشأن أدوار الأعضاء ومسؤولياتهم. </p>
+                <p>نعقد الجمعية العمومية بشكل عام، ولكن يمكن التنظيم بشكل أفضل للاجتماع: يتم اتخاذ قرارات استراتيجية، ولكن عملية التحضير عن سيرها يتم عرض كافة التقارير المالية، وكل تقرير من ما سبق. ويكون من المناسب أحيانًا الحديث بشأن أدوار الأعضاء ومسؤولياتهم.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="policies" id="policies-strong" value="strong">
-                  <label for="policies-strong">قوية</label>
+                  <input type="radio" name="annual_meeting" id="annual-meeting-strong" value="strong">
+                  <label for="annual-meeting-strong">قوية</label>
                 </div>
-                <p> نعقد الجمعية العمومية على الأقل مرة في العام، ويتم التنظيم لذلك مسبقًا. يظهر الأعضاء تفاعلهم القيادي في عملية اتخاذ القرارات الاستراتيجية. يتم عرض التقارير المالية على حقيقتها ويكون من المناسب أحيانًا الحديث بشأن أدوار الأعضاء ومسؤولياتهم وأوضحها جدًا. </p>
+                <p>نعقد الجمعية العمومية على الأقل مرة في العام، ويتم التنظيم لذلك مسبقًا. يظهر الأعضاء تفاعلهم القيادي في عملية اتخاذ القرارات الاستراتيجية. يتم عرض التقارير المالية على حقيقتها ويكون من المناسب أحيانًا الحديث بشأن أدوار الأعضاء ومسؤولياتهم وأوضحها جدًا.</p>
               </div>
             </div>
           </div>
+
           <div class="notes-section">
             <h3>إضافة الملاحظات</h3>
             <textarea name="section5_notes" rows="4" placeholder="أضف ملاحظاتك هنا..."></textarea>
@@ -742,41 +750,39 @@
         </div>
       </section>
 
-      <!-- Sections 6-9 and Priorities continue in the same pattern... -->
-
       <!-- Section 6: Funding -->
       <section id="section6" class="tab-content">
         <div class="section-card">
           <h2>٦. التمويل والعلاقة مع الجهات المانحة</h2>
 
           <div class="assessment-item">
-            <h3> تنوع مصادر التمويل</h3>
+            <h3>تنوع مصادر التمويل</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="funding_sustainability" id="funding-minimum" value="minimum">
-                  <label for="funding-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="funding_diversity" id="funding-diversity-minimum" value="minimum">
+                  <label for="funding-diversity-minimum">بالحد الأدنى</label>
                 </div>
-                <p> تعتمد جهة مانحة أو جهتين فقط، مما يضعف القدرة على تغيير الاستراتيجيات وتقليل المخاطر المالية.</p>
+                <p>تعتمد جهة مانحة أو جهتين فقط، مما يضعف القدرة على تغيير الاستراتيجيات وتقليل المخاطر المالية.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="funding_sustainability" id="funding-initial" value="initial">
-                  <label for="funding-initial">أولية</label>
+                  <input type="radio" name="funding_diversity" id="funding-diversity-initial" value="initial">
+                  <label for="funding-diversity-initial">أولية</label>
                 </div>
                 <p>تقدم بعض الجهات تمويلاً، لكن الاعتماد الأساسي ما زال على جهة أو جهتين. يتم بذل التركيز كثيراً على جمع تبرعات فردية جديدة محدودة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="funding_sustainability" id="funding-medium" value="medium">
-                  <label for="funding-medium">متوسطة</label>
+                  <input type="radio" name="funding_diversity" id="funding-diversity-medium" value="medium">
+                  <label for="funding-diversity-medium">متوسطة</label>
                 </div>
                 <p>تُذكَر استراتيجية التمويل بأن هناك قاعدة مصادر متنوعة، مع تكرار اعتماد على جهات وأفراد محددين.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="funding_sustainability" id="funding-strong" value="strong">
-                  <label for="funding-strong">قوية</label>
+                  <input type="radio" name="funding_diversity" id="funding-diversity-strong" value="strong">
+                  <label for="funding-diversity-strong">قوية</label>
                 </div>
                 <p>يتم اعتماد استراتيجية طويلة المدى ومتطورة جداً للتمويل، بما يؤدي إلى توفير دعم مستدام ومتعدد المصادر، وتقليل الاعتماد على مصادر قليلة بما في ذلك القدرة على التواصل الدائم مع المانحين الأفراد وإيجاد مصادر جديدة.</p>
               </div>
@@ -784,134 +790,137 @@
           </div>
 
           <div class="assessment-item">
-            <h3> كفاية التمويل </h3>
+            <h3>كفاية التمويل</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-minimum" value="minimum">
-                  <label for="financial-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="funding_adequacy" id="funding-adequacy-minimum" value="minimum">
+                  <label for="funding-adequacy-minimum">بالحد الأدنى</label>
                 </div>
                 <p>لا تغطي الأموال التي تم جمعها كفاية لتلبية احتياجات الموارد البشرية والبرامج.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-initial" value="initial">
-                  <label for="financial-initial">أولية</label>
+                  <input type="radio" name="funding_adequacy" id="funding-adequacy-initial" value="initial">
+                  <label for="funding-adequacy-initial">أولية</label>
                 </div>
-                <p> تغطي الأموال التي تم جمعها احتياجات أساسية للبرامج والموارد البشرية، ولكن مع عدم كفاية دائمة لتلبية جميع احتياجات الموارد البشرية..</p>
+                <p>تغطي الأموال التي تم جمعها احتياجات أساسية للبرامج والموارد البشرية، ولكن مع عدم كفاية دائمة لتلبية جميع احتياجات الموارد البشرية.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-medium" value="medium">
-                  <label for="financial-medium">متوسطة</label>
+                  <input type="radio" name="funding_adequacy" id="funding-adequacy-medium" value="medium">
+                  <label for="funding-adequacy-medium">متوسطة</label>
                 </div>
                 <p>تتوفر الأموال التي تم جمعها بشكل كاف لتغطية الإدارة والبرامج، ولكل من البرامج الجديدة والموارد الضرورية.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-strong" value="strong">
-                  <label for="financial-strong">قوية</label>
+                  <input type="radio" name="funding_adequacy" id="funding-adequacy-strong" value="strong">
+                  <label for="funding-adequacy-strong">قوية</label>
                 </div>
                 <p>تتوفر الأموال التي تم جمعها لتلبية الاحتياجات وتتيح المجال إلى الابتكار، إضافةً إلى الموارد البشرية اللازمة لتوسيع البرامج كل عام.</p>
               </div>
             </div>
           </div>
+
           <div class="assessment-item">
-            <h3>   التمويل بناءً على أولويات المؤسسة  </h3>
+            <h3>التمويل بناءً على أولويات المؤسسة</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-minimum" value="minimum">
-                  <label for="financial-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="funding_priorities" id="funding-priorities-minimum" value="minimum">
+                  <label for="funding-priorities-minimum">بالحد الأدنى</label>
                 </div>
-                <p> يتم تحديد العمل الذي يتطلبه واقع المؤسسة بالاستناد إلى اهتمامات الممولين، مما يقلل أحياناً من عمل المؤسسة الأصلي.</p>
+                <p>يتم تحديد العمل الذي يتطلبه واقع المؤسسة بالاستناد إلى اهتمامات الممولين، مما يقلل أحياناً من عمل المؤسسة الأصلي.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-initial" value="initial">
-                  <label for="financial-initial">أولية</label>
+                  <input type="radio" name="funding_priorities" id="funding-priorities-initial" value="initial">
+                  <label for="funding-priorities-initial">أولية</label>
                 </div>
-                <p> تقوم المؤسسة ببعض الاستراتيجيات، ولكنها تقوم بتغيير بعض منها بناءً على متطلبات الممولين، في حين أن خطتها تبقى كخلفية. </p>
+                <p>تقوم المؤسسة ببعض الاستراتيجيات، ولكنها تقوم بتغيير بعض منها بناءً على متطلبات الممولين، في حين أن خطتها تبقى كخلفية.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-medium" value="medium">
-                  <label for="financial-medium">متوسطة</label>
+                  <input type="radio" name="funding_priorities" id="funding-priorities-medium" value="medium">
+                  <label for="funding-priorities-medium">متوسطة</label>
                 </div>
-                <p> تتحمل المؤسسة بدعم تمويلها بذاتها، مع بعض التعديلات لتوافق اهتمامات الممولين، ولكنها تحافظ على خطتها الأصلية بشكل عام. </p>
+                <p>تتحمل المؤسسة بدعم تمويلها بذاتها، مع بعض التعديلات لتوافق اهتمامات الممولين، ولكنها تحافظ على خطتها الأصلية بشكل عام.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-strong" value="strong">
-                  <label for="financial-strong">قوية</label>
+                  <input type="radio" name="funding_priorities" id="funding-priorities-strong" value="strong">
+                  <label for="funding-priorities-strong">قوية</label>
                 </div>
-                <p>  تتحمل المؤسسة دعم كل احتياجاتها وتبني قراراتها التمويلية بناءً على رؤيتها وأولوياتها الواضحة في خطتها الاستراتيجية. </p>
+                <p>تتحمل المؤسسة دعم كل احتياجاتها وتبني قراراتها التمويلية بناءً على رؤيتها وأولوياتها الواضحة في خطتها الاستراتيجية.</p>
               </div>
             </div>
           </div>
-<div class="assessment-item">
-            <h3>   أعضاء الفريق المسؤولين عن التمويل  </h3>
+
+          <div class="assessment-item">
+            <h3>أعضاء الفريق المسؤولين عن التمويل</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-minimum" value="minimum">
-                  <label for="financial-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="funding_team" id="funding-team-minimum" value="minimum">
+                  <label for="funding-team-minimum">بالحد الأدنى</label>
                 </div>
-                <p> تفتقر المؤسسة إلى أعضاء مسؤولين عن التمويل ولا تخصص وقتاً كافياً لجمع الأموال.</p>
+                <p>تفتقر المؤسسة إلى أعضاء مسؤولين عن التمويل ولا تخصص وقتاً كافياً لجمع الأموال.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-initial" value="initial">
-                  <label for="financial-initial">أولية</label>
+                  <input type="radio" name="funding_team" id="funding-team-initial" value="initial">
+                  <label for="funding-team-initial">أولية</label>
                 </div>
-                <p> قد يحدد الدور التمويلي كجزء صغير من عمل بعض الأعضاء الموجودين، لكن لا يكون هناك شخص مخصص له. </p>
+                <p>قد يحدد الدور التمويلي كجزء صغير من عمل بعض الأعضاء الموجودين، لكن لا يكون هناك شخص مخصص له.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-medium" value="medium">
-                  <label for="financial-medium">متوسطة</label>
+                  <input type="radio" name="funding_team" id="funding-team-medium" value="medium">
+                  <label for="funding-team-medium">متوسطة</label>
                 </div>
-                <p> يتم مسؤولية التمويل على عضو أو أكثر، الذين يعملون بأي وقت متاح ضمن مسؤولياتهم الأخرى. </p>
+                <p>يتم مسؤولية التمويل على عضو أو أكثر، الذين يعملون بأي وقت متاح ضمن مسؤولياتهم الأخرى.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-strong" value="strong">
-                  <label for="financial-strong">قوية</label>
+                  <input type="radio" name="funding_team" id="funding-team-strong" value="strong">
+                  <label for="funding-team-strong">قوية</label>
                 </div>
-                <p>  يكون للأعضاء المسؤولون عن التمويل دور مخصص وجزء كبير من وقتهم مكرس لبناء علاقات مع الممولين وجمع التبرعات بشكل منتظم. </p>
+                <p>يكون للأعضاء المسؤولون عن التمويل دور مخصص وجزء كبير من وقتهم مكرس لبناء علاقات مع الممولين وجمع التبرعات بشكل منتظم.</p>
               </div>
             </div>
           </div>
+
           <div class="assessment-item">
-            <h3>  العلاقات مع الجهات المانحة  </h3>
+            <h3>العلاقات مع الجهات المانحة</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-minimum" value="minimum">
-                  <label for="financial-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="donor_relations" id="donor-relations-minimum" value="minimum">
+                  <label for="donor-relations-minimum">بالحد الأدنى</label>
                 </div>
-                <p> لا يعتبر التواصل مع الجهات المانحة كافياً وتعبر الجهات المانحة عن قلقها في هذا الصدد. </p>
+                <p>لا يعتبر التواصل مع الجهات المانحة كافياً وتعبر الجهات المانحة عن قلقها في هذا الصدد.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-initial" value="initial">
-                  <label for="financial-initial">أولية</label>
+                  <input type="radio" name="donor_relations" id="donor-relations-initial" value="initial">
+                  <label for="donor-relations-initial">أولية</label>
                 </div>
-                <p> بشكل عام، لا تكون عملية التواصل مع الجهات المانحة مرضية أو في الوقت المناسب؛ غالباً ما يحصل تأخير في عملية تقديم التقارير، أو يتم تقديم تقارير غير مكتملة؛ غالباً ما تطلب الجهات المانحة، بشكل متكرر مزيداً من التوضيح. </p>
+                <p>بشكل عام، لا تكون عملية التواصل مع الجهات المانحة مرضية أو في الوقت المناسب؛ غالباً ما يحصل تأخير في عملية تقديم التقارير، أو يتم تقديم تقارير غير مكتملة؛ غالباً ما تطلب الجهات المانحة، بشكل متكرر مزيداً من التوضيح.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-medium" value="medium">
-                  <label for="financial-medium">متوسطة</label>
+                  <input type="radio" name="donor_relations" id="donor-relations-medium" value="medium">
+                  <label for="donor-relations-medium">متوسطة</label>
                 </div>
-                <p> تكون عملية التواصل مع الجهات المانحة جيدة ولكنها لا تحصل دائما في الوقت الذي تعتبره الجهات المانحة مناسباً؛ يتعين على الجهات المانحة، من وقت إلى آخر، طلب مزيد من التوضيح. </p>
+                <p>تكون عملية التواصل مع الجهات المانحة جيدة ولكنها لا تحصل دائما في الوقت الذي تعتبره الجهات المانحة مناسباً؛ يتعين على الجهات المانحة، من وقت إلى آخر، طلب مزيد من التوضيح.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="financial_management" id="financial-strong" value="strong">
-                  <label for="financial-strong">قوية</label>
+                  <input type="radio" name="donor_relations" id="donor-relations-strong" value="strong">
+                  <label for="donor-relations-strong">قوية</label>
                 </div>
-                <p>  تسود علاقة متينة مع الجهات المانحة، وتتمتع المؤسسة بسمعة إيجابية لدى الجهات المانحة، وهي معروفة بتواصلها وبتقديمها التقارير في الوقت المناسب بشكل واضحواستباقي وتفاعلي. </p>
+                <p>تسود علاقة متينة مع الجهات المانحة، وتتمتع المؤسسة بسمعة إيجابية لدى الجهات المانحة، وهي معروفة بتواصلها وبتقديمها التقارير في الوقت المناسب بشكل واضحواستباقي وتفاعلي.</p>
               </div>
             </div>
           </div>
@@ -929,33 +938,33 @@
           <h2>٧. الإدارة</h2>
 
           <div class="assessment-item">
-            <h3> الموجبات القانونية </h3>
+            <h3>الموجبات القانونية</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="organizational_structure" id="structure-minimum" value="minimum">
-                  <label for="structure-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="legal_obligations" id="legal-obligations-minimum" value="minimum">
+                  <label for="legal-obligations-minimum">بالحد الأدنى</label>
                 </div>
-                <p> المؤسسة غير مسجلة قانونيًا وغير متطابقة مع القوانين ذات الصلة.</p>
+                <p>المؤسسة غير مسجلة قانونيًا وغير متطابقة مع القوانين ذات الصلة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="organizational_structure" id="structure-initial" value="initial">
-                  <label for="structure-initial">أولية</label>
+                  <input type="radio" name="legal_obligations" id="legal-obligations-initial" value="initial">
+                  <label for="legal-obligations-initial">أولية</label>
                 </div>
-                <p> المؤسسة في صدد اكتساب الشخصية القانونية ولكنها لا تمتثل للقوانين ذات الصلة امتثالاً تامًا. </p>
+                <p>المؤسسة في صدد اكتساب الشخصية القانونية ولكنها لا تمتثل للقوانين ذات الصلة امتثالاً تامًا.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="organizational_structure" id="structure-medium" value="medium">
-                  <label for="structure-medium">متوسطة</label>
+                  <input type="radio" name="legal_obligations" id="legal-obligations-medium" value="medium">
+                  <label for="legal-obligations-medium">متوسطة</label>
                 </div>
-                <p> المؤسسة مسجلة قانونيًا ولكن يصعب عليها أحيانًا أن تمتثل للقوانين ذات الصلة امتثالًا تامًا. </p>
+                <p>المؤسسة مسجلة قانونيًا ولكن يصعب عليها أحيانًا أن تمتثل للقوانين ذات الصلة امتثالًا تامًا.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="organizational_structure" id="structure-strong" value="strong">
-                  <label for="structure-strong">قوية</label>
+                  <input type="radio" name="legal_obligations" id="legal-obligations-strong" value="strong">
+                  <label for="legal-obligations-strong">قوية</label>
                 </div>
                 <p>المؤسسة مسجلة قانونيًا وتمتثل للقوانين ذات الصلة امتثالًا تامًا.</p>
               </div>
@@ -963,104 +972,107 @@
           </div>
 
           <div class="assessment-item">
-            <h3> الهيكل التنظيمي </h3>
+            <h3>الهيكل التنظيمي</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="hr_management" id="hr-minimum" value="minimum">
-                  <label for="hr-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="organizational_structure" id="org-structure-minimum" value="minimum">
+                  <label for="org-structure-minimum">بالحد الأدنى</label>
                 </div>
-                <p> تفتقر المؤسسة إلى هيكل تنظيمي رسمي أو توزيع واضح للأدوار والمسؤوليات. </p>
+                <p>تفتقر المؤسسة إلى هيكل تنظيمي رسمي أو توزيع واضح للأدوار والمسؤوليات.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="hr_management" id="hr-initial" value="initial">
-                  <label for="hr-initial">أولية</label>
+                  <input type="radio" name="organizational_structure" id="org-structure-initial" value="initial">
+                  <label for="org-structure-initial">أولية</label>
                 </div>
                 <p>تتمتع المؤسسة بهيكل تنظيمي يبين بعض التوزيع للأدوار والمسؤوليات.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="hr_management" id="hr-medium" value="medium">
-                  <label for="hr-medium">متوسطة</label>
+                  <input type="radio" name="organizational_structure" id="org-structure-medium" value="medium">
+                  <label for="org-structure-medium">متوسطة</label>
                 </div>
                 <p>تتمتع المؤسسة بهيكل تنظيمي مصمم بشكل جيد لتنظيم مجالات العمل، إلا أنها قد تفتقر إلى الوضوح في الأدوار والمسؤوليات.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="hr_management" id="hr-strong" value="strong">
-                  <label for="hr-strong">قوية</label>
+                  <input type="radio" name="organizational_structure" id="org-structure-strong" value="strong">
+                  <label for="org-structure-strong">قوية</label>
                 </div>
                 <p>تتمتع المؤسسة بهيكل تنظيمي مصمم بشكل جيد ويُنسجم تمامًا مع الأهداف، ما يتيح عملية مرنة وواضحة في أدوار ومسؤوليات كل منصب.</p>
               </div>
             </div>
           </div>
-<div class="assessment-item">
-            <h3> الإجراءات الإدارية </h3>
-            <div class="options-grid">
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="hr_management" id="hr-minimum" value="minimum">
-                  <label for="hr-minimum">بالحد الأدنى</label>
-                </div>
-                <p> تفتقر إلى الإجراءات الإدارية الموثقة. </p>
-              </div>
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="hr_management" id="hr-initial" value="initial">
-                  <label for="hr-initial">أولية</label>
-                </div>
-                <p> تتمتع بإجراءات إدارية مؤقتة جزئيًا لشرح وظائف الموظفين الرسمية، ولكن الموظفين لا يتبعونها دائمًا أو يعرفونها. </p>
-              </div>
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="hr_management" id="hr-medium" value="medium">
-                  <label for="hr-medium">متوسطة</label>
-                </div>
-                <p> تتمتع بإجراءات إدارية موثقة بشكل جيد يتم اتباعها في معظم الحالات، مع بقاء بعض الانحرافات عن الأنظمة المراجعة دوريًا إذا لزم الأمر.</p>
-              </div>
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="hr_management" id="hr-strong" value="strong">
-                  <label for="hr-strong">قوية</label>
-                </div>
-                <p> تتمتع بإجراءات إدارية قوية ويتم اتباعها من جميع مستويات المؤسسة بشكل منتظم، ويتم مراجعتها وتحديثها بانتظام. </p>
-              </div>
-            </div>
-          </div>
+
           <div class="assessment-item">
-            <h3> أنظمة التكنولوجيا والمعلومات </h3>
+            <h3>الإجراءات الإدارية</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="hr_management" id="hr-minimum" value="minimum">
-                  <label for="hr-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="administrative_procedures" id="admin-procedures-minimum" value="minimum">
+                  <label for="admin-procedures-minimum">بالحد الأدنى</label>
                 </div>
-                <p> لا تلبي أنظمة التكنولوجيا والمعلومات احتياجات المؤسسة الأساسية. </p>
+                <p>تفتقر إلى الإجراءات الإدارية الموثقة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="hr_management" id="hr-initial" value="initial">
-                  <label for="hr-initial">أولية</label>
+                  <input type="radio" name="administrative_procedures" id="admin-procedures-initial" value="initial">
+                  <label for="admin-procedures-initial">أولية</label>
                 </div>
-                <p> أنظمة التكنولوجيا والمعلومات موجودة ولكنها تفتقر إلى عمق ملحوظ. </p>
+                <p>تتمتع بإجراءات إدارية مؤقتة جزئيًا لشرح وظائف الموظفين الرسمية، ولكن الموظفين لا يتبعونها دائمًا أو يعرفونها.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="hr_management" id="hr-medium" value="medium">
-                  <label for="hr-medium">متوسطة</label>
+                  <input type="radio" name="administrative_procedures" id="admin-procedures-medium" value="medium">
+                  <label for="admin-procedures-medium">متوسطة</label>
                 </div>
-                <p>  تعمل أنظمة التكنولوجيا والمعلومات، لكنها بحاجة إلى تحسينات منتظمة (كالتحديثات الدورية) إلا أنها تلبي الحاجة. </p>
+                <p>تتمتع بإجراءات إدارية موثقة بشكل جيد يتم اتباعها في معظم الحالات، مع بقاء بعض الانحرافات عن الأنظمة المراجعة دوريًا إذا لزم الأمر.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="hr_management" id="hr-strong" value="strong">
-                  <label for="hr-strong">قوية</label>
+                  <input type="radio" name="administrative_procedures" id="admin-procedures-strong" value="strong">
+                  <label for="admin-procedures-strong">قوية</label>
                 </div>
-                <p> تتيح أنظمة التكنولوجيا والمعلومات إلى المؤسسة بيئة عمل متقدمة (التقنية الفعالة) والتحديث بانتظام. </p>
+                <p>تتمتع بإجراءات إدارية قوية ويتم اتباعها من جميع مستويات المؤسسة بشكل منتظم، ويتم مراجعتها وتحديثها بانتظام.</p>
               </div>
             </div>
           </div>
+
+          <div class="assessment-item">
+            <h3>أنظمة التكنولوجيا والمعلومات</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="technology_systems" id="tech-systems-minimum" value="minimum">
+                  <label for="tech-systems-minimum">بالحد الأدنى</label>
+                </div>
+                <p>لا تلبي أنظمة التكنولوجيا والمعلومات احتياجات المؤسسة الأساسية.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="technology_systems" id="tech-systems-initial" value="initial">
+                  <label for="tech-systems-initial">أولية</label>
+                </div>
+                <p>أنظمة التكنولوجيا والمعلومات موجودة ولكنها تفتقر إلى عمق ملحوظ.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="technology_systems" id="tech-systems-medium" value="medium">
+                  <label for="tech-systems-medium">متوسطة</label>
+                </div>
+                <p>تعمل أنظمة التكنولوجيا والمعلومات، لكنها بحاجة إلى تحسينات منتظمة (كالتحديثات الدورية) إلا أنها تلبي الحاجة.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="technology_systems" id="tech-systems-strong" value="strong">
+                  <label for="tech-systems-strong">قوية</label>
+                </div>
+                <p>تتيح أنظمة التكنولوجيا والمعلومات إلى المؤسسة بيئة عمل متقدمة (التقنية الفعالة) والتحديث بانتظام.</p>
+              </div>
+            </div>
+          </div>
+
           <div class="notes-section">
             <h3>إضافة الملاحظات</h3>
             <textarea name="section7_notes" rows="4" placeholder="أضف ملاحظاتك هنا..."></textarea>
@@ -1074,235 +1086,239 @@
           <h2>٨. الثقافة المؤسسية</h2>
 
           <div class="assessment-item">
-            <h3>  التواصل الداخلي </h3>
+            <h3>التواصل الداخلي</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="organizational_values" id="values-minimum" value="minimum">
-                  <label for="values-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="internal_communication" id="internal-comm-minimum" value="minimum">
+                  <label for="internal-comm-minimum">بالحد الأدنى</label>
                 </div>
-                <p> تفتقر المؤسسة إلى آليات التواصل الداخلي، حيث يتم تبادل المعلومات إلا بشكل غير منتظم ومتقطع.</p>
+                <p>تفتقر المؤسسة إلى آليات التواصل الداخلي، حيث يتم تبادل المعلومات إلا بشكل غير منتظم ومتقطع.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="organizational_values" id="values-initial" value="initial">
-                  <label for="values-initial">أولية</label>
+                  <input type="radio" name="internal_communication" id="internal-comm-initial" value="initial">
+                  <label for="internal-comm-initial">أولية</label>
                 </div>
-                <p> تكون آليات التواصل الداخلي ضعيفة وتحصل بين تنظيم وآخر، وتتمثل غالبًا بتبادل المعلومات بشكل بطيء وغير منتظم.</p>
+                <p>تكون آليات التواصل الداخلي ضعيفة وتحصل بين تنظيم وآخر، وتتمثل غالبًا بتبادل المعلومات بشكل بطيء وغير منتظم.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="organizational_values" id="values-medium" value="medium">
-                  <label for="values-medium">متوسطة</label>
+                  <input type="radio" name="internal_communication" id="internal-comm-medium" value="medium">
+                  <label for="internal-comm-medium">متوسطة</label>
                 </div>
-                <p>  آليات التواصل الداخلي موجودة ودائمة التداول بشكل منتظم، إلا أن حالات انقطاع التواصل ما تزال تحصل.</p>
+                <p>آليات التواصل الداخلي موجودة ودائمة التداول بشكل منتظم، إلا أن حالات انقطاع التواصل ما تزال تحصل.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="organizational_values" id="values-strong" value="strong">
-                  <label for="values-strong">قوية</label>
+                  <input type="radio" name="internal_communication" id="internal-comm-strong" value="strong">
+                  <label for="internal-comm-strong">قوية</label>
                 </div>
-                <p> يعتبر التواصل الداخلي فعالًا مع آليات واضحة لتبادل المعلومات والتحديثات، ما يقلل من حالات انقطاع التواصل للحد الأدنى.</p>
+                <p>يعتبر التواصل الداخلي فعالًا مع آليات واضحة لتبادل المعلومات والتحديثات، ما يقلل من حالات انقطاع التواصل للحد الأدنى.</p>
               </div>
             </div>
           </div>
 
           <div class="assessment-item">
-            <h3>آلية اتخاذ القرارات </h3>
+            <h3>آلية اتخاذ القرارات</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-minimum" value="minimum">
-                  <label for="environment-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="decision_making" id="decision-making-minimum" value="minimum">
+                  <label for="decision-making-minimum">بالحد الأدنى</label>
                 </div>
-                <p> تكون آلية اتخاذ القرارات غير واضحة، ويتم اتخاذ شخص أو اثنين بجميع القرارات تقريبًا. </p>
+                <p>تكون آلية اتخاذ القرارات غير واضحة، ويتم اتخاذ شخص أو اثنين بجميع القرارات تقريبًا.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-initial" value="initial">
-                  <label for="environment-initial">أولية</label>
+                  <input type="radio" name="decision_making" id="decision-making-initial" value="initial">
+                  <label for="decision-making-initial">أولية</label>
                 </div>
-                <p> غالبًا ما تكون آلية اتخاذ القرارات غير واضحة، مما يؤدي إلى تضييع الوقت وحالة من التردد في اتخاذ القرارات. </p>
+                <p>غالبًا ما تكون آلية اتخاذ القرارات غير واضحة، مما يؤدي إلى تضييع الوقت وحالة من التردد في اتخاذ القرارات.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-medium" value="medium">
-                  <label for="environment-medium">متوسطة</label>
+                  <input type="radio" name="decision_making" id="decision-making-medium" value="medium">
+                  <label for="decision-making-medium">متوسطة</label>
                 </div>
-                <p> آلية اتخاذ القرارات متوفرة، إلا أن الارتباط محدود حول من يجب أن يتخذ تلك القرارات. </p>
+                <p>آلية اتخاذ القرارات متوفرة، إلا أن الارتباط محدود حول من يجب أن يتخذ تلك القرارات.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-strong" value="strong">
-                  <label for="environment-strong">قوية</label>
+                  <input type="radio" name="decision_making" id="decision-making-strong" value="strong">
+                  <label for="decision-making-strong">قوية</label>
                 </div>
-                <p>  آلية اتخاذ القرارات واضحة وفعالة ومرنة وموزعة ومعلومة ومقبولة من نطاق واسع. </p>
+                <p>آلية اتخاذ القرارات واضحة وفعالة ومرنة وموزعة ومعلومة ومقبولة من نطاق واسع.</p>
               </div>
             </div>
           </div>
-                    <div class="assessment-item">
-            <h3>اقتراحات أعضاء الفريق </h3>
-            <div class="options-grid">
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-minimum" value="minimum">
-                  <label for="environment-minimum">بالحد الأدنى</label>
-                </div>
-                <p> قلما تتاح الفرصة لأعضاء الفريق بأن يقدموا اقتراحاتهم ويتم تجاهل دورهم في آلية اتخاذ القرارات. </p>
-              </div>
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-initial" value="initial">
-                  <label for="environment-initial">أولية</label>
-                </div>
-                <p> غالبًا ما تكون آلية اتخاذ القرارات غير واضحة، مما يؤدي إلى تضييع الوقت وحالة من التردد في اتخاذ القرارات. </p>
-              </div>
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-medium" value="medium">
-                  <label for="environment-medium">متوسطة</label>
-                </div>
-                <p> يقدم أعضاء الفريق اقتراحاتهم، وتؤخذ بعين الاعتبار أحيانا دونا عن التأثير دائما على القرارات. </p>
-              </div>
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-strong" value="strong">
-                  <label for="environment-strong">قوية</label>
-                </div>
-                <p> تؤخذ اقتراحات أعضاء الفريق بعين الاعتبار وتؤثر في آلية اتخاذ القرارات، ويبرز أعضاء الفريق تقديرًا لأهمية آرائهم، بما فيها التي لم تعتمد. </p>
-              </div>
-            </div>
-          </div>
+
           <div class="assessment-item">
-            <h3> التزام أعضاء الفريق </h3>
+            <h3>اقتراحات أعضاء الفريق</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-minimum" value="minimum">
-                  <label for="environment-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="team_suggestions" id="team-suggestions-minimum" value="minimum">
+                  <label for="team-suggestions-minimum">بالحد الأدنى</label>
                 </div>
-                <p> لم تبذل قلة قليلة من أعضاء الفريق أي التزام ينعكس إيجابًا على المؤسسة وتنعكس سلبًا على جودة العمل. </p>
+                <p>قلما تتاح الفرصة لأعضاء الفريق بأن يقدموا اقتراحاتهم ويتم تجاهل دورهم في آلية اتخاذ القرارات.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-initial" value="initial">
-                  <label for="environment-initial">أولية</label>
+                  <input type="radio" name="team_suggestions" id="team-suggestions-initial" value="initial">
+                  <label for="team-suggestions-initial">أولية</label>
                 </div>
-                <p> تتفاوت التزام أعضاء الفريق نحو المؤسسة مما يؤثر سلبًا على جودة العمل. </p>
+                <p>غالبًا ما تكون آلية اتخاذ القرارات غير واضحة، مما يؤدي إلى تضييع الوقت وحالة من التردد في اتخاذ القرارات.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-medium" value="medium">
-                  <label for="environment-medium">متوسطة</label>
+                  <input type="radio" name="team_suggestions" id="team-suggestions-medium" value="medium">
+                  <label for="team-suggestions-medium">متوسطة</label>
                 </div>
-                <p> يكون أعضاء الفريق ملتزمين تجاه المؤسسة، وتشكل جودة العمل خير دليل على ذلك. </p>
+                <p>يقدم أعضاء الفريق اقتراحاتهم، وتؤخذ بعين الاعتبار أحيانا دونا عن التأثير دائما على القرارات.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-strong" value="strong">
-                  <label for="environment-strong">قوية</label>
+                  <input type="radio" name="team_suggestions" id="team-suggestions-strong" value="strong">
+                  <label for="team-suggestions-strong">قوية</label>
                 </div>
-                <p> يتحمل أعضاء الفريق بالالتزام العالي ويتحملون مسؤولية جودة عملهم. </p>
+                <p>تؤخذ اقتراحات أعضاء الفريق بعين الاعتبار وتؤثر في آلية اتخاذ القرارات، ويبرز أعضاء الفريق تقديرًا لأهمية آرائهم، بما فيها التي لم تعتمد.</p>
               </div>
             </div>
           </div>
-                <div class="assessment-item">
-            <h3> العمل الجماعي </h3>
-            <div class="options-grid">
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-minimum" value="minimum">
-                  <label for="environment-minimum">بالحد الأدنى</label>
-                </div>
-                <p> يعمل أعضاء الفريق إلى العمل بشكل فردي، إلا من قليل من الأقسام التي تعمل بمستوى جماعي نادر. </p>
-              </div>
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-initial" value="initial">
-                  <label for="environment-initial">أولية</label>
-                </div>
-                <p> يعمل أعضاء الفريق إلى العمل بشكل انفرادي أو من خلال أقسام صغيرة متفرقة، مع مستوى جماعي متوسط.=) </p>
-              </div>
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-medium" value="medium">
-                  <label for="environment-medium">متوسطة</label>
-                </div>
-                <p> يعمل أعضاء الفريق بانسجام إلى حد ما في إطار العمل الجماعي مع مستوى جيد من التعاون لحل المشاكل وتحقيق النتائج . </p>
-              </div>
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-strong" value="strong">
-                  <label for="environment-strong">قوية</label>
-                </div>
-                <p> يعمل أعضاء الفريق بحكمة الفريق وقوة يتعاونون. </p>
-              </div>
-            </div>
-          </div>
-                          <div class="assessment-item">
-            <h3>   وفاة أعضاء الفريق   </h3>
-            <div class="options-grid">
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-minimum" value="minimum">
-                  <label for="environment-minimum">بالحد الأدنى</label>
-                </div>
-                <p> يؤثر كل من غياب/ العمل الذي لا يحتمل و/أو التحديات على وفاة أعضاء الفريق (الجسدي و/أو العاطفي و/أو المهني)، وقد يؤثر سلباً على جودة العمل. </p>
-              </div>
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-initial" value="initial">
-                  <label for="environment-initial">أولية</label>
-                </div>
-                <p> يؤثر كل من غياب/ العمل الذي لا يحتمل و/أو التحديات على وفاة أعضاء الفريق (الجسدي و/أو العاطفي و/أو المهني). </p>
-              </div>
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-medium" value="medium">
-                  <label for="environment-medium">متوسطة</label>
-                </div>
-                <p> نتائج المؤسسة المتألق لها تتطلب وفاة أعضاء الفريق الجسدي والعاطفي، ولكن لا تؤثر بشكل كبير على اعتماد الفريق. </p>
-              </div>
-              <div class="option-card">
-                <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-strong" value="strong">
-                  <label for="environment-strong">قوية</label>
-                </div>
-                <p> بشكل عام، وفاة أعضاء الفريق الجسدي والعاطفي و/أو المهني تعتبر مساهمتهم ملهمة ويتم اعتمادها من قبل مؤسسات أخرى. </p>
-              </div>
-            </div>
-          </div>
-      
+
           <div class="assessment-item">
-            <h3>  النزاعات بين أعضاء الفريق   </h3>
+            <h3>التزام أعضاء الفريق</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-minimum" value="minimum">
-                  <label for="environment-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="team_commitment" id="team-commitment-minimum" value="minimum">
+                  <label for="team-commitment-minimum">بالحد الأدنى</label>
                 </div>
-                <p> تؤثر النزاعات الداخلية بين أعضاء الفريق تأثيراً سلبياً على جودة عمل المؤسسة. </p>
+                <p>لم تبذل قلة قليلة من أعضاء الفريق أي التزام ينعكس إيجابًا على المؤسسة وتنعكس سلبًا على جودة العمل.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-initial" value="initial">
-                  <label for="environment-initial">أولية</label>
+                  <input type="radio" name="team_commitment" id="team-commitment-initial" value="initial">
+                  <label for="team-commitment-initial">أولية</label>
                 </div>
-                <p> تؤثر بعض النزاعات المحدودة على جودة عمل المؤسسة. </p>
+                <p>تتفاوت التزام أعضاء الفريق نحو المؤسسة مما يؤثر سلبًا على جودة العمل.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-medium" value="medium">
-                  <label for="environment-medium">متوسطة</label>
+                  <input type="radio" name="team_commitment" id="team-commitment-medium" value="medium">
+                  <label for="team-commitment-medium">متوسطة</label>
                 </div>
-                <p>  يتم حل معظم النزاعات بشكل مدمج بين أعضاء الفريق، مع بقاء بعض منها ما يؤثر أحياناً على جودة العمل. </p>
+                <p>يكون أعضاء الفريق ملتزمين تجاه المؤسسة، وتشكل جودة العمل خير دليل على ذلك.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="work_environment" id="environment-strong" value="strong">
-                  <label for="environment-strong">قوية</label>
+                  <input type="radio" name="team_commitment" id="team-commitment-strong" value="strong">
+                  <label for="team-commitment-strong">قوية</label>
                 </div>
-                <p> يتم حل معظم النزاعات بشكل بناء ولا تؤثر على جودة العمل. </p>
+                <p>يتحمل أعضاء الفريق بالالتزام العالي ويتحملون مسؤولية جودة عملهم.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>العمل الجماعي</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="teamwork" id="teamwork-minimum" value="minimum">
+                  <label for="teamwork-minimum">بالحد الأدنى</label>
+                </div>
+                <p>يعمل أعضاء الفريق إلى العمل بشكل فردي، إلا من قليل من الأقسام التي تعمل بمستوى جماعي نادر.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="teamwork" id="teamwork-initial" value="initial">
+                  <label for="teamwork-initial">أولية</label>
+                </div>
+                <p>يعمل أعضاء الفريق إلى العمل بشكل انفرادي أو من خلال أقسام صغيرة متفرقة، مع مستوى جماعي متوسط.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="teamwork" id="teamwork-medium" value="medium">
+                  <label for="teamwork-medium">متوسطة</label>
+                </div>
+                <p>يعمل أعضاء الفريق بانسجام إلى حد ما في إطار العمل الجماعي مع مستوى جيد من التعاون لحل المشاكل وتحقيق النتائج.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="teamwork" id="teamwork-strong" value="strong">
+                  <label for="teamwork-strong">قوية</label>
+                </div>
+                <p>يعمل أعضاء الفريق بحكمة الفريق وقوة يتعاونون.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>رفاهية أعضاء الفريق</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="team_wellbeing" id="team-wellbeing-minimum" value="minimum">
+                  <label for="team-wellbeing-minimum">بالحد الأدنى</label>
+                </div>
+                <p>يؤثر كل من غياب/ العمل الذي لا يحتمل و/أو التحديات على رفاهية أعضاء الفريق (الجسدي و/أو العاطفي و/أو المهني)، وقد يؤثر سلباً على جودة العمل.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="team_wellbeing" id="team-wellbeing-initial" value="initial">
+                  <label for="team-wellbeing-initial">أولية</label>
+                </div>
+                <p>يؤثر كل من غياب/ العمل الذي لا يحتمل و/أو التحديات على رفاهية أعضاء الفريق (الجسدي و/أو العاطفي و/أو المهني).</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="team_wellbeing" id="team-wellbeing-medium" value="medium">
+                  <label for="team-wellbeing-medium">متوسطة</label>
+                </div>
+                <p>نتائج المؤسسة المتألق لها تتطلب رفاهية أعضاء الفريق الجسدي والعاطفي، ولكن لا تؤثر بشكل كبير على اعتماد الفريق.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="team_wellbeing" id="team-wellbeing-strong" value="strong">
+                  <label for="team-wellbeing-strong">قوية</label>
+                </div>
+                <p>بشكل عام، رفاهية أعضاء الفريق الجسدي والعاطفي و/أو المهني تعتبر مساهمتهم ملهمة ويتم اعتمادها من قبل مؤسسات أخرى.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-item">
+            <h3>النزاعات بين أعضاء الفريق</h3>
+            <div class="options-grid">
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="team_conflicts" id="team-conflicts-minimum" value="minimum">
+                  <label for="team-conflicts-minimum">بالحد الأدنى</label>
+                </div>
+                <p>تؤثر النزاعات الداخلية بين أعضاء الفريق تأثيراً سلبياً على جودة عمل المؤسسة.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="team_conflicts" id="team-conflicts-initial" value="initial">
+                  <label for="team-conflicts-initial">أولية</label>
+                </div>
+                <p>تؤثر بعض النزاعات المحدودة على جودة عمل المؤسسة.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="team_conflicts" id="team-conflicts-medium" value="medium">
+                  <label for="team-conflicts-medium">متوسطة</label>
+                </div>
+                <p>يتم حل معظم النزاعات بشكل مدمج بين أعضاء الفريق، مع بقاء بعض منها ما يؤثر أحياناً على جودة العمل.</p>
+              </div>
+              <div class="option-card">
+                <div class="option-header">
+                  <input type="radio" name="team_conflicts" id="team-conflicts-strong" value="strong">
+                  <label for="team-conflicts-strong">قوية</label>
+                </div>
+                <p>يتم حل معظم النزاعات بشكل بناء ولا تؤثر على جودة العمل.</p>
               </div>
             </div>
           </div>
@@ -1320,202 +1336,205 @@
           <h2>٩. القيادة التنفيذية</h2>
 
           <div class="assessment-item">
-            <h3>   أسلوب (نمط الإدارة)   </h3>
+            <h3>أسلوب (نمط الإدارة)</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="leadership_effectiveness" id="leadership-minimum" value="minimum">
-                  <label for="leadership-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="leadership_style" id="leadership-style-minimum" value="minimum">
+                  <label for="leadership-style-minimum">بالحد الأدنى</label>
                 </div>
-                <p>ايتمتع المدير التنفيذي بنمط قيادة واضح يضبط سلوكه جيدًا داخل المؤسسة، ما يؤثر سلبًا على المؤسسة.</p>
+                <p>يتمتع المدير التنفيذي بنمط قيادة واضح يضبط سلوكه جيدًا داخل المؤسسة، ما يؤثر سلبًا على المؤسسة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="leadership_effectiveness" id="leadership-initial" value="initial">
-                  <label for="leadership-initial">أولية</label>
+                  <input type="radio" name="leadership_style" id="leadership-style-initial" value="initial">
+                  <label for="leadership-style-initial">أولية</label>
                 </div>
-                <p>يتمتع المدير التنفيذي بنمط قيادة واضح ومحدد، ولكن تأثيره على المؤسسة يتوزع بين الجوانب الإيجابية والسلبية..</p>
+                <p>يتمتع المدير التنفيذي بنمط قيادة واضح ومحدد، ولكن تأثيره على المؤسسة يتوزع بين الجوانب الإيجابية والسلبية.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="leadership_effectiveness" id="leadership-medium" value="medium">
-                  <label for="leadership-medium">متوسطة</label>
+                  <input type="radio" name="leadership_style" id="leadership-style-medium" value="medium">
+                  <label for="leadership-style-medium">متوسطة</label>
                 </div>
-                <p>يتمتع المدير التنفيذي بنمط قيادة واضح ومتماسك، ولكنه لا يتماشى دائمًا مع أهداف المؤسسة الخارجية..</p>
+                <p>يتمتع المدير التنفيذي بنمط قيادة واضح ومتماسك، ولكنه لا يتماشى دائمًا مع أهداف المؤسسة الخارجية.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="leadership_effectiveness" id="leadership-strong" value="strong">
-                  <label for="leadership-strong">قوية</label>
+                  <input type="radio" name="leadership_style" id="leadership-style-strong" value="strong">
+                  <label for="leadership-style-strong">قوية</label>
                 </div>
-                <p> يتمتع المدير التنفيذي بنمط قيادة قوي ومتسق يتلاءم مع أهداف المؤسسة بشكل عام، ويُسهم في دعم الموظفين وتحفيزهم </p>
+                <p>يتمتع المدير التنفيذي بنمط قيادة قوي ومتسق يتلاءم مع أهداف المؤسسة بشكل عام، ويُسهم في دعم الموظفين وتحفيزهم</p>
               </div>
             </div>
           </div>
 
           <div class="assessment-item">
-            <h3>  حسن التقدير في الشؤون المالية</h3>
+            <h3>حسن التقدير في الشؤون المالية</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-minimum" value="minimum">
-                  <label for="succession-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="financial_judgment" id="financial-judgment-minimum" value="minimum">
+                  <label for="financial-judgment-minimum">بالحد الأدنى</label>
                 </div>
                 <p>يقوم المدير التنفيذي بقراءة القوائم والتقارير المالية ولا يتمتع بحس جيد في مسائل الشؤون المالية.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-initial" value="initial">
-                  <label for="succession-initial">أولية</label>
+                  <input type="radio" name="financial_judgment" id="financial-judgment-initial" value="initial">
+                  <label for="financial-judgment-initial">أولية</label>
                 </div>
-                <p> يقوم المدير التنفيذي بقراءة القوائم المالية، ولكنه يواجه صعوبة في التركيز على المسائل الكبرى. </p>
+                <p>يقوم المدير التنفيذي بقراءة القوائم المالية، ولكنه يواجه صعوبة في التركيز على المسائل الكبرى.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-medium" value="medium">
-                  <label for="succession-medium">متوسطة</label>
+                  <input type="radio" name="financial_judgment" id="financial-judgment-medium" value="medium">
+                  <label for="financial-judgment-medium">متوسطة</label>
                 </div>
-                <p> يتمتع المدير التنفيذي بخبرة مالية متوسطة تُمكنه من المشاركة في التخطيط المالي.</p>
+                <p>يتمتع المدير التنفيذي بخبرة مالية متوسطة تُمكنه من المشاركة في التخطيط المالي.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-strong" value="strong">
-                  <label for="succession-strong">قوية</label>
+                  <input type="radio" name="financial_judgment" id="financial-judgment-strong" value="strong">
+                  <label for="financial-judgment-strong">قوية</label>
                 </div>
-                <p>يتمتع المدير التنفيذي بخبرة مالية وقدرة قيّمة في التخطيط المالي، ويُسهم في تخصيص الموارد بشكل جيد للاجتماعات على المدى المتوسط والبعيد..</p>
+                <p>يتمتع المدير التنفيذي بخبرة مالية وقدرة قيّمة في التخطيط المالي، ويُسهم في تخصيص الموارد بشكل جيد للاجتماعات على المدى المتوسط والبعيد.</p>
               </div>
             </div>
           </div>
-                <div class="assessment-item">
-            <h3>   المهارات الشخصية  </h3>
+
+          <div class="assessment-item">
+            <h3>المهارات الشخصية</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-minimum" value="minimum">
-                  <label for="succession-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="personal_skills" id="personal-skills-minimum" value="minimum">
+                  <label for="personal-skills-minimum">بالحد الأدنى</label>
                 </div>
-                <p> تُعتبر أسلوب المدير التنفيذي في التواصل والإدارة غير فعال، لا يُسهم في تحفيز الآخرين أو التفاعل معهم.</p>
+                <p>تُعتبر أسلوب المدير التنفيذي في التواصل والإدارة غير فعال، لا يُسهم في تحفيز الآخرين أو التفاعل معهم.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-initial" value="initial">
-                  <label for="succession-initial">أولية</label>
+                  <input type="radio" name="personal_skills" id="personal-skills-initial" value="initial">
+                  <label for="personal-skills-initial">أولية</label>
                 </div>
-                <p> له مجال لتحسين مهارات التواصل والإدارة، يُقدِم على المحاولة أحيانًا، ولكنه يفتقر إلى الاتساق. </p>
+                <p>له مجال لتحسين مهارات التواصل والإدارة، يُقدِم على المحاولة أحيانًا، ولكنه يفتقر إلى الاتساق.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-medium" value="medium">
-                  <label for="succession-medium">متوسطة</label>
+                  <input type="radio" name="personal_skills" id="personal-skills-medium" value="medium">
+                  <label for="personal-skills-medium">متوسطة</label>
                 </div>
-                <p> يُقدِّر أعضاء الفريق إجمالاً مهارات المدير التنفيذي في التواصل والإدارة. يقدم التوجيه المناسب في الوقت المناسب. </p>
+                <p>يُقدِّر أعضاء الفريق إجمالاً مهارات المدير التنفيذي في التواصل والإدارة. يقدم التوجيه المناسب في الوقت المناسب.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-strong" value="strong">
-                  <label for="succession-strong">قوية</label>
+                  <input type="radio" name="personal_skills" id="personal-skills-strong" value="strong">
+                  <label for="personal-skills-strong">قوية</label>
                 </div>
                 <p>يتمتع المدير التنفيذي بمهارات عالية في التواصل مع الآخرين والتعامل مع الموظفين. يتمتع بقدرة استثنائية على رفع أداء الموظفين وتوجيههم على الصعيد المهني(قوية).</p>
               </div>
             </div>
           </div>
-                        <div class="assessment-item">
-            <h3>   القيادة في الصف الثاني  </h3>
+
+          <div class="assessment-item">
+            <h3>القيادة في الصف الثاني</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-minimum" value="minimum">
-                  <label for="succession-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="second_line_leadership" id="second-line-minimum" value="minimum">
+                  <label for="second-line-minimum">بالحد الأدنى</label>
                 </div>
-                <p> القيادة الثانوية غير موجودة أو أن المدير التنفيذي يتفرد بقراراته.</p>
+                <p>القيادة الثانوية غير موجودة أو أن المدير التنفيذي يتفرد بقراراته.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-initial" value="initial">
-                  <label for="succession-initial">أولية</label>
+                  <input type="radio" name="second_line_leadership" id="second-line-initial" value="initial">
+                  <label for="second-line-initial">أولية</label>
                 </div>
-                <p> قيادة ثانوية ذات فعالية محدودة و/أو لا تقوم بدور تنفيذي بشكل كافٍ. </p>
+                <p>قيادة ثانوية ذات فعالية محدودة و/أو لا تقوم بدور تنفيذي بشكل كافٍ.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-medium" value="medium">
-                  <label for="succession-medium">متوسطة</label>
+                  <input type="radio" name="second_line_leadership" id="second-line-medium" value="medium">
+                  <label for="second-line-medium">متوسطة</label>
                 </div>
-                <p> تكون القيادة الثانوية فعالة في معظم الأحيان ولها دور تنفيذي، لكنها لا تُشارك بشكل كافٍ </p>
+                <p>تكون القيادة الثانوية فعالة في معظم الأحيان ولها دور تنفيذي، لكنها لا تُشارك بشكل كافٍ</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-strong" value="strong">
-                  <label for="succession-strong">قوية</label>
+                  <input type="radio" name="second_line_leadership" id="second-line-strong" value="strong">
+                  <label for="second-line-strong">قوية</label>
                 </div>
                 <p>يقوم المدير التنفيذي بتفويض وتكليف بعض الأعمال بقيادة ثانوية قوية وفعالة.</p>
               </div>
             </div>
           </div>
-          
-                        <div class="assessment-item">
-            <h3>    السمعة الخارجية    </h3>
+
+          <div class="assessment-item">
+            <h3>السمعة الخارجية</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-minimum" value="minimum">
-                  <label for="succession-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="external_reputation" id="external-reputation-minimum" value="minimum">
+                  <label for="external-reputation-minimum">بالحد الأدنى</label>
                 </div>
-                <p> المدير التنفيذي غير معروف أو لا يحظى باحترام في بيئة الفئات المستهدفة.</p>
+                <p>المدير التنفيذي غير معروف أو لا يحظى باحترام في بيئة الفئات المستهدفة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-initial" value="initial">
-                  <label for="succession-initial">أولية</label>
+                  <input type="radio" name="external_reputation" id="external-reputation-initial" value="initial">
+                  <label for="external-reputation-initial">أولية</label>
                 </div>
-                <p> المدير التنفيذي غير معروف بشكل جيد؛ لديه بعض الحلفاء الأقوياء و لكنّه لا يحظى باحترام تام بين الفئات المستهدفة. . </p>
+                <p>المدير التنفيذي غير معروف بشكل جيد؛ لديه بعض الحلفاء الأقوياء و لكنّه لا يحظى باحترام تام بين الفئات المستهدفة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-medium" value="medium">
-                  <label for="succession-medium">متوسطة</label>
+                  <input type="radio" name="external_reputation" id="external-reputation-medium" value="medium">
+                  <label for="external-reputation-medium">متوسطة</label>
                 </div>
-                <p> يحظى المدير التنفيذي باحترام وهو معروف لدى الفئات المستهدفة. </p>
+                <p>يحظى المدير التنفيذي باحترام وهو معروف لدى الفئات المستهدفة.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-strong" value="strong">
-                  <label for="succession-strong">قوية</label>
+                  <input type="radio" name="external_reputation" id="external-reputation-strong" value="strong">
+                  <label for="external-reputation-strong">قوية</label>
                 </div>
-                <p> يحظى المدير التنفيذي باحترام عالٍ لدى الفئات المستهدفة ويُعتبر قائدًا في مجاله..</p>
+                <p>يحظى المدير التنفيذي باحترام عالٍ لدى الفئات المستهدفة ويُعتبر قائدًا في مجاله.</p>
               </div>
             </div>
           </div>
-                             <div class="assessment-item">
-            <h3> التعاقب الإداري   </h3>
+
+          <div class="assessment-item">
+            <h3>التعاقب الإداري</h3>
             <div class="options-grid">
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-minimum" value="minimum">
-                  <label for="succession-minimum">بالحد الأدنى</label>
+                  <input type="radio" name="succession_planning" id="succession-planning-minimum" value="minimum">
+                  <label for="succession-planning-minimum">بالحد الأدنى</label>
                 </div>
-                <p> تعتمد المؤسسة تمامًا على المدير التنفيذي الحالي، ولا يمكنها أن تعمل بدونه. </p>
+                <p>تعتمد المؤسسة تمامًا على المدير التنفيذي الحالي، ولا يمكنها أن تعمل بدونه.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-initial" value="initial">
-                  <label for="succession-initial">أولية</label>
+                  <input type="radio" name="succession_planning" id="succession-planning-initial" value="initial">
+                  <label for="succession-planning-initial">أولية</label>
                 </div>
-                <p> تعتمد المؤسسة بشكل كبير على المدير التنفيذي الحالي، وسيكون مستقبلها موضع شك في غيابه.. </p>
+                <p>تعتمد المؤسسة بشكل كبير على المدير التنفيذي الحالي، وسيكون مستقبلها موضع شك في غيابه.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-medium" value="medium">
-                  <label for="succession-medium">متوسطة</label>
+                  <input type="radio" name="succession_planning" id="succession-planning-medium" value="medium">
+                  <label for="succession-planning-medium">متوسطة</label>
                 </div>
-                <p> في حال ترك المدير التنفيذي المؤسسة، ستواجه هذه الأخيرة الصعوبات، ولكن المؤسسة ستكون قادرة على الأرجح على ضمان استمراريتها .. </p>
+                <p>في حال ترك المدير التنفيذي المؤسسة، ستواجه هذه الأخيرة الصعوبات، ولكن المؤسسة ستكون قادرة على الأرجح على ضمان استمراريتها.</p>
               </div>
               <div class="option-card">
                 <div class="option-header">
-                  <input type="radio" name="succession_planning" id="succession-strong" value="strong">
-                  <label for="succession-strong">قوية</label>
+                  <input type="radio" name="succession_planning" id="succession-planning-strong" value="strong">
+                  <label for="succession-planning-strong">قوية</label>
                 </div>
-                <p> وضعت المؤسسة بشكل استباقي خطة للتعاقب الإداري، مع توقع عملية انتقال سلسة إلى قيادة قائد جديد.</p>
+                <p>وضعت المؤسسة بشكل استباقي خطة للتعاقب الإداري، مع توقع عملية انتقال سلسة إلى قيادة قائد جديد.</p>
               </div>
             </div>
           </div>
@@ -1539,7 +1558,7 @@
 
             <h4>النتائج المتوقعة</h4>
             <textarea name="priority1_results" rows="3"
-              placeholder="ما هي النتا��ج المتوقعة لهذه الأولوية في السنوات القليلة القادمة؟ ما هو الشكل الذي سيتخذه النجاح؟"
+              placeholder="ما هي النتائج المتوقعة لهذه الأولوية في السنوات القليلة القادمة؟ ما هو الشكل الذي سيتخذه النجاح؟"
               required></textarea>
 
             <h4>خطوات العمل</h4>
@@ -1603,45 +1622,6 @@
     </form>
   </div>
 
-  <script>
-    function validateForm() {
-      // Basic client-side validation
-      let valid = true;
-      const radioGroups = document.querySelectorAll('.options-grid');
-
-      radioGroups.forEach(group => {
-        const radios = group.querySelectorAll('input[type="radio"]');
-        let isChecked = false;
-        radios.forEach(radio => {
-          if (radio.checked) {
-            isChecked = true;
-          }
-        });
-        if (!isChecked) {
-          alert('الرجاء تحديد خيار واحد على الأقل لكل سؤال.');
-          valid = false;
-        }
-      });
-
-      const notes = document.querySelectorAll('textarea[name$="_notes"]');
-      notes.forEach(note => {
-        if (note.value.trim() === '') {
-          alert('الرجاء إضافة ملاحظاتك لكل قسم.');
-          valid = false;
-        }
-      });
-
-      const priorities = document.querySelectorAll('textarea[name^="priority"]');
-      priorities.forEach(priority => {
-        if (priority.value.trim() === '') {
-          alert('الرجاء ملء جميع حقول الأولويات.');
-          valid = false;
-        }
-      });
-
-      return valid;
-    }
-  </script>
   <script src="script.js"></script>
 </body>
 
