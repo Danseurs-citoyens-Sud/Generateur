@@ -662,7 +662,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 new window.docx.Paragraph({
                   children: [
                     new window.docx.TextRun({
-                      text: "E-MAIL: contact@dcs.org",
+                      text: "E-MAIL: contact@o-dcs.org",
                     }),
                   ],
                 }),
@@ -1182,20 +1182,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 new window.docx.Paragraph({
                   children: [
                     new window.docx.TextRun({
-                      text: "E-MAIL: contact@dcs.org",
+                      text: "E-MAIL: contact@o-dcs.org",
                     }),
                   ],
                 }),
                 new window.docx.Paragraph({
                   children: [
                     new window.docx.TextRun({
-                      text: "SITE WEB: https://v-dcs.org",
+                      text: "SITE WEB: https://o-dcs.org",
                     }),
                   ],
                 }),
                 new window.docx.Paragraph({
                   children: [
-                    new window.docx.TextRun({ text: "TEL: 75 824 405" }),
+                    new window.docx.TextRun({ text: "TEL: 70 634 405" }),
                   ],
                 }),
               ],
@@ -1443,7 +1443,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alignment: window.docx.AlignmentType.CENTER,
         children: [
           new window.docx.TextRun({
-            text: "Adresse électronique: contact@dcs.org",
+            text: "Adresse électronique: contact@o-dcs.org",
             size: 16,
           }),
         ],
@@ -1455,7 +1455,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alignment: window.docx.AlignmentType.CENTER,
         children: [
           new window.docx.TextRun({
-            text: "N° de téléphone: 75824405",
+            text: "N° de téléphone: 70634405",
             size: 16,
           }),
         ],
@@ -1688,9 +1688,9 @@ document.addEventListener("DOMContentLoaded", () => {
               <div>M/F: 1447474/T</div>
               <div>N° CNSS: 548790-77</div>
               <div>ADRESSE: 115 RUE MOHAMED-ALI GABÈS 6000</div>
-              <div>E-MAIL: contact@dcs.org</div>
-              <div>SITE WEB: https://v-dcs.org</div>
-              <div>TEL: 75 824 405</div>
+              <div>E-MAIL: contact@o-dcs.org</div>
+              <div>SITE WEB: https://o-dcs.org</div>
+              <div>TEL: 70 634 405</div>
           </div>
           <div class="header-right">
               <img src="${dcsLogo}" alt="DCS Logo" style="width: 100px;">
@@ -2385,8 +2385,8 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="mission-contact">
         <p>M/F: 1447474/T - RNE: 0229048201</p>
         <p>Adresse: 115 Rue Mohamed Ali 6000, Gabès</p>
-        <p>Adresse électronique: contact@dcs.org</p>
-        <p>N° de téléphone: 75824405</p>
+        <p>Adresse électronique: contact@o-dcs.org</p>
+        <p>N° de téléphone: 70 634 405</p>
       </div>
     `;
 
