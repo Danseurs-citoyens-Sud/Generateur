@@ -1,257 +1,640 @@
-/* General Styles */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
 body {
   background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
+  padding: 20px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  background-color: white;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header {
+h1 {
   text-align: center;
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-  color: #2c3e50;
-  margin-bottom: 15px;
-}
-
-header p {
-  color: #555;
-  margin-bottom: 10px;
-}
-
-/* Organization Info */
-.org-info {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #333;
 }
 
-.org-info h2 {
-  color: #2c3e50;
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.preview-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-height: 800px;
+  overflow-y: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
   margin-bottom: 15px;
+  color: #444;
+  border-bottom: 2px solid #e94e4d;
+  padding-bottom: 8px;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  color: #555;
 }
 
 .form-group {
   margin-bottom: 15px;
 }
 
-.form-group label {
+label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  color: #555;
 }
 
-.form-group input {
+input,
+select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
 }
 
-/* Tabs Navigation */
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #e94e4d;
+  box-shadow: 0 0 0 2px rgba(233, 78, 77, 0.2);
 }
 
-.tab-btn {
+button {
   padding: 10px 15px;
-  background-color: #e9ecef;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  color: #495057;
-  transition: all 0.3s ease;
-}
-
-.tab-btn:hover {
-  background-color: #dee2e6;
-}
-
-.tab-btn.active {
-  background-color: #007bff;
+  background-color: #4a6da7;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Section Content */
-.tab-content {
-  display: none;
-  margin-bottom: 30px;
+button:hover {
+  background-color: #3a5a8f;
+  transform: translateY(-2px);
 }
 
-.tab-content.active {
-  display: block;
+.form-actions {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.section-card {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.section-card h2 {
-  color: #2c3e50;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #e9ecef;
-}
-
-/* Assessment Items */
-.assessment-item {
-  margin-bottom: 30px;
-}
-
-.assessment-item h3 {
-  color: #343a40;
+#tasksContainer {
   margin-bottom: 15px;
 }
 
-.options-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 15px;
+.task-item {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.task-input {
+  flex: 1;
+}
+
+.remove-task {
+  background-color: #e74c3c;
+}
+
+.remove-task:hover {
+  background-color: #c0392b;
+}
+
+.add-task-btn {
+  background-color: #27ae60;
   margin-bottom: 20px;
 }
 
-.option-card {
-  border: 1px solid #dee2e6;
+.add-task-btn:hover {
+  background-color: #219653;
+}
+
+/* Styles pour le contrat */
+.contract {
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  line-height: 1.5;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Format A4 pour la prévisualisation */
+  width: 100%;
+  max-width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+}
+
+.contract-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header-left {
+  width: 70%;
+}
+
+.header-right {
+  width: 30%;
+  text-align: right;
+}
+
+.contract-title {
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #e94e4d;
+}
+
+.contract-parties {
+  margin-bottom: 20px;
+}
+
+.contract-content {
+  margin-bottom: 20px;
+}
+
+.article {
+  margin-bottom: 15px;
+  page-break-inside: avoid; /* Éviter les sauts de page à l'intérieur des articles */
+}
+
+.article-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #4a6da7;
+}
+
+.tasks-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.tasks-list li {
+  margin-bottom: 5px;
+}
+
+.signatures {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  page-break-inside: avoid; /* Éviter les sauts de page dans les signatures */
+  padding-top: 20px;
+  border-top: 1px dashed #ddd;
+}
+
+.signature-block {
+  width: 45%;
+}
+
+.signature-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.signature-name {
+  text-align: center;
+}
+
+/* Styles spécifiques pour le contrat DCS */
+.contract::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15px;
+  background-color: #e94e4d;
+  opacity: 0.7;
+}
+
+/* Styles spécifiques pour l'impression et le Word */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #contract,
+  #contract * {
+    visibility: visible;
+  }
+
+  #contract {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 210mm;
+    height: 297mm;
+    font-size: 10pt;
+    line-height: 1.3;
+  }
+
+  .article {
+    page-break-inside: avoid;
+  }
+
+  .signatures {
+    page-break-inside: avoid;
+  }
+}
+
+/* Styles pour la page de login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+}
+
+.login-box {
+  width: 400px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.login-box:hover {
+  transform: translateY(-5px);
+}
+
+.login-logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  text-align: left;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-top: 15px;
+  font-size: 14px;
+  background-color: rgba(231, 76, 60, 0.1);
+  padding: 8px;
+  border-radius: 4px;
+  display: none;
+}
+
+.error-message.visible {
+  display: block;
+}
+
+/* Modifier la couleur du bouton de connexion */
+#loginBtn {
+  background-color: #e94e4d;
+  transition: background-color 0.3s;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+#loginBtn:hover {
+  background-color: #d43c3a;
+}
+
+/* Styles pour la navbar - Nouvelle couleur */
+.navbar {
+  background-color: #f5f5f5;
+  color: #444;
+  padding: 15px 20px;
+  margin-bottom: 20px;
   border-radius: 5px;
-  padding: 15px;
-  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-.option-card:hover {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.option-header {
+.navbar-brand {
+  font-size: 1.2rem;
+  font-weight: bold;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  gap: 10px;
 }
 
-.option-header input[type="radio"] {
-  margin-right: 10px;
+.navbar-brand img {
+  height: 30px;
 }
 
-.option-header label {
+.navbar-menu {
+  display: flex;
+  gap: 15px;
+}
+
+/* Style modifié pour les éléments de la navbar */
+.navbar-item {
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  position: relative;
+  color: #444;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-item:hover {
+  background-color: rgba(233, 78, 77, 0.1);
+  transform: translateY(-2px);
+  border-bottom: 2px solid #e94e4d;
+}
+
+.navbar-item.active {
+  background-color: #e94e4d;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.contract-section {
+  display: none;
+}
+
+.contract-section.active {
+  display: block;
+}
+
+/* Styles pour le bouton de déconnexion dans la navbar */
+#logoutBtn {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+#logoutBtn:hover {
+  background-color: #e74c3c;
+}
+
+/* Modification du style pour l'info utilisateur avec bouton de déconnexion */
+.user-info {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+#userDisplay {
   font-weight: bold;
-  color: #495057;
+  color: #444;
 }
 
-.option-card p {
-  color: #6c757d;
-  font-size: 0.9rem;
+/* Overlay de chargement pour la génération Word */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
-/* Notes Section */
-.notes-section {
-  margin-top: 20px;
+.loading-spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #e94e4d;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
 }
 
-.notes-section h3 {
-  color: #343a40;
+.loading-text {
+  color: white;
+  font-size: 18px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .form-container,
+  .preview-container {
+    width: 100%;
+  }
+
+  .preview-container {
+    margin-top: 20px;
+    max-height: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .navbar-menu {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .user-info {
+    margin-top: 10px;
+  }
+
+  .signatures {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .signature-block {
+    width: 100%;
+  }
+
+  .login-box {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .form-container,
+  .preview-container {
+    padding: 15px;
+  }
+}
+
+/* Ajoutez ces styles à la fin de votre fichier CSS existant */
+
+/* Styles pour l'ordre de mission */
+.mission-person {
+  display: flex;
+  gap: 10px;
   margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.mission-person input {
+  flex: 1;
+  min-width: 150px;
+}
+
+.add-person-btn {
+  background-color: #27ae60;
+  margin-bottom: 20px;
+}
+
+.add-person-btn:hover {
+  background-color: #219653;
+}
+
+.remove-person {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove-person:hover {
+  background-color: #c0392b;
 }
 
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
   resize: vertical;
 }
 
-/* Priority Section */
-.priority-section {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e9ecef;
+textarea:focus {
+  outline: none;
+  border-color: #e94e4d;
+  box-shadow: 0 0 0 2px rgba(233, 78, 77, 0.2);
 }
 
-.priority-section h3 {
-  color: #343a40;
-  margin-bottom: 15px;
-}
-
-.priority-section h4 {
-  color: #495057;
-  margin: 15px 0 10px;
-}
-
-/* Form Actions */
-.form-actions {
+/* Style pour l'ordre de mission dans la prévisualisation */
+.mission-header {
   text-align: center;
-  margin-top: 30px;
-}
-
-.submit-btn {
-  padding: 12px 25px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  margin: 20px 0;
+  text-decoration: underline;
 }
 
-.submit-btn:hover {
-  background-color: #218838;
+.mission-persons {
+  margin: 20px 0;
 }
 
-/* Error Styling */
-.assessment-item.error {
-  border-left: 4px solid #dc3545;
-  padding-left: 15px;
-  background-color: rgba(220, 53, 69, 0.05);
+.mission-person-item {
+  margin-bottom: 10px;
 }
 
-textarea.error {
-  border-color: #dc3545;
-  background-color: rgba(220, 53, 69, 0.05);
+.mission-details {
+  margin: 20px 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .options-grid {
-    grid-template-columns: 1fr;
-  }
+.mission-footer {
+  margin-top: 40px;
+}
 
-  .tabs {
-    flex-direction: column;
-  }
+.mission-signature {
+  margin-top: 60px;
+  text-align: right;
+}
 
-  .tab-btn {
-    margin-bottom: 5px;
-  }
+.mission-contact {
+  margin-top: 60px;
+  font-size: 10px;
+  text-align: center;
 }
