@@ -655,7 +655,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 new window.docx.Paragraph({
                   children: [
                     new window.docx.TextRun({
-                      text: "ADRESSE: 118 RUE MOHAMED-ALI GABÈS 6000",
+                      text: "ADRESSE: 115 RUE MOHAMED-ALI GABÈS 6000",
                     }),
                   ],
                 }),
@@ -669,7 +669,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 new window.docx.Paragraph({
                   children: [
                     new window.docx.TextRun({
-                      text: "SITE WEB: https://dcs.org",
+                      text: "SITE WEB: https://o-dcs.org",
                     }),
                   ],
                 }),
