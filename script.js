@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Utilisateurs (normalement, cela serait stocké sur un serveur)
   const users = [
-    { username: "Anis", password: "anis@123dcs", displayName: "Anis" },
+    { username: "Anis", password: "anis@123dcs", displayName: "Bonjour Anis" },
     { username: "user", password: "user123", displayName: "Utilisateur" },
   ];
 
