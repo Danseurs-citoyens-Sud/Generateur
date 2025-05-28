@@ -703,8 +703,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     new window.docx.ImageRun({
                       data: fetchImageAsBase64(dcsLogo),
                       transformation: {
-                        width: 100,
-                        height: 50,
+                        width: 150,
+                        height: 40,
                       },
                     }),
                   ],
@@ -1050,72 +1050,46 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     );
 
-    // Ajouter un espace
-    children.push(new window.docx.Paragraph({}));
-    children.push(new window.docx.Paragraph({}));
+    // Signature de l'employeur
+children.push(
+  new window.docx.Paragraph({
+    children: [
+      new window.docx.TextRun({ text: selectedContractType === "prestation" ? "LE CLIENT" : "L'EMPLOYEUR", bold: true }),
+    ],
+  })
+);
+children.push(
+  new window.docx.Paragraph({
+    children: [new window.docx.TextRun("Association Danseurs Citoyens Sud")],
+  })
+);
+children.push(
+  new window.docx.Paragraph({
+    children: [new window.docx.TextRun("Aymen Goubaa")],
+  })
+);
 
-    // Signatures
-    children.push(
-      new window.docx.Paragraph({
-        children: [
-          new window.docx.TextRun({
-            text:
-              selectedContractType === "prestation"
-                ? "LE CLIENT"
-                : "L'EMPLOYEUR",
-            bold: true,
-          }),
-        ],
-      })
-    );
+// Espacement entre signatures
+children.push(new window.docx.Paragraph({}));
+children.push(new window.docx.Paragraph({}));
+children.push(new window.docx.Paragraph({}));
 
-    children.push(
-      new window.docx.Paragraph({
-        children: [
-          new window.docx.TextRun({
-            text: "Association Danseurs Citoyens Sud",
-          }),
-        ],
-      })
-    );
-
-    children.push(
-      new window.docx.Paragraph({
-        children: [
-          new window.docx.TextRun({
-            text: "Aymen Goubaa",
-          }),
-        ],
-      })
-    );
-
-    // Ajouter un espace
-    children.push(new window.docx.Paragraph({}));
-    children.push(new window.docx.Paragraph({}));
-
-    children.push(
-      new window.docx.Paragraph({
-        children: [
-          new window.docx.TextRun({
-            text:
-              selectedContractType === "prestation"
-                ? "LE PRESTATAIRE"
-                : "L'EMPLOYÉ(E)",
-            bold: true,
-          }),
-        ],
-      })
-    );
-
-    children.push(
-      new window.docx.Paragraph({
-        children: [
-          new window.docx.TextRun({
-            text: employeeName,
-          }),
-        ],
-      })
-    );
+// Signature de l'employé(e)
+children.push(
+  new window.docx.Paragraph({
+    children: [
+      new window.docx.TextRun({
+        text: selectedContractType === "prestation" ? "LE PRESTATAIRE" : "L'EMPLOYÉ(E)",
+        bold: true,
+      }),
+    ],
+  })
+);
+children.push(
+  new window.docx.Paragraph({
+    children: [new window.docx.TextRun(employeeName || "_________")],
+  })
+);
 
     return children;
   }
