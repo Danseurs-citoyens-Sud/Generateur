@@ -486,6 +486,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     size: 99.7,
                     type: window.docx.WidthType.PERCENTAGE,
                   },
+                  margins: {
+            left: 300, // marge gauche = 300 twips ≈ 0.2 cm
+            top: 100,  // optionnel : espacement haut
+            bottom: 100, // optionnel : espacement bas
+          },
                   children: documentContent,
                   borders: {
                     top: { style: window.docx.BorderStyle.NONE },
@@ -2324,7 +2329,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div>ADRESSE: 115 RUE MOHAMED-ALI GABÈS 6000</div>
           <div>E-MAIL: contact@dcs.org</div>
           <div>SITE WEB: https://v-dcs.org</div>
-          <div>TEL: 75 824 405</div>
+          <div>TEL: 70 634 405</div>
         </div>
         <div class="header-right">
           <img src="${dcsLogo}" alt="DCS Logo" style="width: 100px;">
