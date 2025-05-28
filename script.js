@@ -521,11 +521,11 @@ document.addEventListener("DOMContentLoaded", () => {
               properties: {
                 page: {
                   size: {
-                    width: 12240, // Largeur en twips (environ 21.6cm, légèrement plus large que A4)
-                    height: 17280, // Hauteur en twips (environ 30.5cm, légèrement plus haut que A4)
+                    width: 11906,  // A4 width
+            height: 16838, // A4 height
                   },
                   margin: {
-                    top: 1440,
+                     top: 1440,  
                     right: 1440,
                     bottom: 1440,
                     left: 1440,
