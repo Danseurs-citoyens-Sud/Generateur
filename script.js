@@ -466,7 +466,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Première colonne: bordure rouge à gauche (0.5% de large)
                 new window.docx.TableCell({
                   width: {
-                    size: 0.8,
+                    size: 2,
                     type: window.docx.WidthType.PERCENTAGE,
                   },
                   shading: {
