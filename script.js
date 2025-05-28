@@ -483,7 +483,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Deuxième colonne: contenu du document
                 new window.docx.TableCell({
                   width: {
-                    size: 99.7,
+                    size: 99.2,
                     type: window.docx.WidthType.PERCENTAGE,
                   },
                   margins: {
